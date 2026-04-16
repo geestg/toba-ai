@@ -1,11 +1,13 @@
+# backend/app.py
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.staticfiles import StaticFiles
 
+from services.chat_engine import process_user_query
 from simulation.dummy_data import get_dummy_data
-from agents.tourist_agent import TouristAgent
-from agents.policy_agent import PolicyAgent
-from agents.umkm_agent import UMKMAgent
+from services.simulation_engine import simulate_with_ai, simulate_without_ai
+from services.metrics import distribution_variance
+from services.explanation_engine import generate_summary
 
 app = FastAPI()
 
@@ -17,22 +19,29 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# 🔥 serve static image
-app.mount("/static", StaticFiles(directory="data"), name="static")
 
-tourist_agent = TouristAgent()
-policy_agent = PolicyAgent()
-umkm_agent = UMKMAgent()
+@app.post("/chat")
+def chat(payload: dict):
+    query = payload.get("message", "")
 
-@app.get("/decision")
-def decision():
+    result = process_user_query(query)
+
+    return result
+
+
+@app.get("/simulate")
+def simulate():
     data = get_dummy_data()
 
+    before = simulate_without_ai([d.copy() for d in data])
+    after = simulate_with_ai([d.copy() for d in data])
+
+    before_var = distribution_variance(before)
+    after_var = distribution_variance(after)
+
     return {
-        "data": data,
-        "decisions": {
-            "tourist": tourist_agent.analyze(data),
-            "policy": policy_agent.analyze(data),
-            "umkm": umkm_agent.analyze(data)
-        }
+        "impact": round(before_var - after_var, 2),
+        "summary": generate_summary(before_var, after_var),
+        "before": before,
+        "after": after,
     }
