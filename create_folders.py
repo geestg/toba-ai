@@ -4,13 +4,11 @@ BASE_PATH = r"D:\toba-ai\backend\data"
 
 locations = [
     "Pantai Lumban Bul Bul","Pantai Pakkodian","Huta Meat",
-    "Pantai Tambunan","Tara Bunga","Pantai Bebas Parapat",
-    "Pantai Pasir Putih Parapat","Batu Gantung",
-    "Bukit Indah Simarjarunjung","Tomok","Ambarita",
-    "Pantai Parbaba","Bukit Holbung","Aek Rangat",
+    "Pantai Tambunan","Tara Bunga","Pantai Bebas Parapat","Batu Gantung",
+    "Bukit Indah Simarjarunjung","Pantai Parbaba","Bukit Holbung","Aek Rangat",
     "Air Terjun Sipiso Piso","Tongging","Bukit Gajah Bobok",
     "Taman Simalem Resort","Geosite Sipinsur",
-    "Huta Ginjang","Lembah Bakkara","Air Terjun Janji"
+    "Huta Ginjang","Air Terjun Janji"
 ]
 
 def create_folders():
