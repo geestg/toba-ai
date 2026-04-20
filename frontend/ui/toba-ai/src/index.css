@@ -1,35 +1,86 @@
 body {
   margin: 0;
-  font-family: 'Orbitron', sans-serif;
+  font-family: sans-serif;
   background: #0f172a;
-  color: #e2e8f0;
+  color: white;
 }
 
-h1, h2, h3 {
+.app {
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
   color: #38bdf8;
 }
 
-.container {
-  padding: 20px;
+.chat {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.chat input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+.chat button {
+  padding: 12px;
+  background: #38bdf8;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
 .card {
   background: #1e293b;
-  border-radius: 12px;
   padding: 20px;
-  margin-top: 15px;
-  box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+  border-radius: 12px;
+  margin-top: 20px;
 }
 
-.glow {
-  animation: glow 1.5s infinite alternate;
+.card img {
+  width: 100%;
+  border-radius: 10px;
 }
 
-@keyframes glow {
-  from {
-    box-shadow: 0 0 5px #38bdf8;
-  }
-  to {
-    box-shadow: 0 0 20px #38bdf8;
-  }
+.grid {
+  display: flex;
+  gap: 10px;
+}
+
+.mini-card img {
+  width: 100px;
+  border-radius: 8px;
+}
+
+.impact {
+  background: #1e293b;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+
+.flow {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.agent {
+  background: #38bdf8;
+  color: black;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.loader {
+  text-align: center;
+  margin-top: 20px;
 }

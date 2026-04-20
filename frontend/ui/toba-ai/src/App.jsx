@@ -3,19 +3,16 @@ import { useState } from "react";
 import ChatWindow from "./components/ChatWindow";
 import DecisionCard from "./components/DecisionCard";
 import ImpactPanel from "./components/ImpactPanel";
-import SimulationView from "./components/SimulationView";
 import AgentFlow from "./components/AgentFlow";
 import Loader from "./components/Loader";
-import ImpactChart from "./components/ImpactChart";
-import MapView from "./components/MapView";
 
 function App() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
 
   return (
-    <div className="container">
-      <h1>Toba AI System</h1>
+    <div className="app">
+      <h1>Toba AI Decision System</h1>
 
       <ChatWindow setData={setData} setLoading={setLoading} />
 
@@ -23,11 +20,8 @@ function App() {
 
       {data && (
         <>
-          <AgentFlow trigger={data} />
-          <DecisionCard decision={data.decision} />
-          <MapView decision={data.decision} />
-          <SimulationView simulation={data.simulation} />
-          <ImpactChart simulation={data.simulation} />
+          <AgentFlow />
+          <DecisionCard data={data} />
           <ImpactPanel impact={data.impact} />
         </>
       )}

@@ -1,15 +1,21 @@
-def run_intent(user_input):
+def run_intent(user_input: str):
     text = user_input.lower()
 
-    preferences = {
-        "cheap": "murah" in text,
-        "quiet": "tidak ramai" in text or "sepi" in text,
-        "good_weather": "cuaca bagus" in text or "cerah" in text,
-        "relax": "santai" in text
-    }
+    intent = {"type": "general", "preferences": []}
 
-    return {
-        "goal": user_input,
-        "type": "tourism",
-        "preferences": preferences
-    }
+    if "tidak tau" in text or "rekomendasi" in text:
+        intent["type"] = "exploration"
+
+    if "santai" in text:
+        intent["preferences"].append("relax")
+
+    if "murah" in text:
+        intent["preferences"].append("budget")
+
+    if "foto" in text:
+        intent["preferences"].append("photo")
+
+    if "alam" in text:
+        intent["preferences"].append("nature")
+
+    return intent

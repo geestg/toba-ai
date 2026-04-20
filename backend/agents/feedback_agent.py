@@ -1,3 +1,3 @@
-# feedback_agent.py
-def run_feedback(user_feedback):
-    return {"status": "stored"}
+memory = []
+def save_feedback(input, decision):
+    memory.append({"input": input, "decision": decision})

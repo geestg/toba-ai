@@ -5,24 +5,28 @@ export default function ChatWindow({ setData, setLoading }) {
   const [input, setInput] = useState("");
 
   const handleSend = async () => {
+    if (!input) return;
+
     setLoading(true);
+
     try {
       const res = await sendMessage(input);
       setData(res.data);
-    } catch (err) {
-      console.error(err);
+    } catch (e) {
+      console.error(e);
     }
+
     setLoading(false);
   };
 
   return (
-    <div className="card">
+    <div className="chat">
       <input
         value={input}
         onChange={(e) => setInput(e.target.value)}
-        placeholder="Mau kemana?"
+        placeholder="Mau kemana nich?"
       />
-      <button onClick={handleSend}>Kirim</button>
+      <button onClick={handleSend}>Cari</button>
     </div>
   );
 }

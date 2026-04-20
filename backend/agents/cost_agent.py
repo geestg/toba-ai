@@ -1,3 +1,2 @@
-# cost_agent.py
 def run_cost(plan):
-    return [{"location": p["name"], "cost": 100000} for p in plan]
+    return [{"name": l["name"], "cost": 100000} for l in plan]

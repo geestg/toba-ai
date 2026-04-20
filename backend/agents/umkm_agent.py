@@ -1,3 +1,2 @@
-# umkm_agent.py
 def run_umkm(plan):
-    return [{"location": p["name"], "impact": "supports local business"} for p in plan]
+    return [{"name": l["name"], "score": 80 if l["crowd"]<50 else 60} for l in plan]
