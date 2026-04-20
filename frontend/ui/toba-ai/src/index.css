@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+h1, h2, h3 {
+  color: #38bdf8;
+}
+
+.container {
+  padding: 20px;
+}
+
+.card {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 15px;
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+}
+
+.glow {
+  animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 5px #38bdf8;
+  }
+  to {
+    box-shadow: 0 0 20px #38bdf8;
+  }
+}

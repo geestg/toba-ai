@@ -1,57 +1,23 @@
-# backend/services/chat_engine.py
+from backend.services.metrics import calculate_distribution
 
-import os
-from dotenv import load_dotenv
-from openai import OpenAI
+def process_request(user_input):
+    data = get_locations()
 
-from core.planner import TaskPlanner
-from core.orchestrator import AgentOrchestrator
-from simulation.dummy_data import get_dummy_data
+    decision = orchestrate(user_input, data)
 
-load_dotenv()
+    simulation = simulate(decision)
+    impact = calculate_impact(decision)
 
-client = OpenAI(
-    api_key=os.getenv("OPENAI_API_KEY")
-)
-
-planner = TaskPlanner()
-orchestrator = AgentOrchestrator()
-
-
-def call_llm(user_input):
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[
-            {
-                "role": "system",
-                "content": (
-                    "You are Toba AI, an autonomous tourism assistant. "
-                    "Extract user intent including destination, budget, duration, and preferences."
-                ),
-            },
-            {"role": "user", "content": user_input},
-        ],
+    distribution_change = calculate_distribution(
+        simulation["before"],
+        simulation["after"]
     )
 
-    return response.choices[0].message.content
-
-
-def process_user_query(user_input):
-    #  1. LLM parsing (biar gak rule-based lagi)
-    parsed = call_llm(user_input)
-
-    #  2. Planning
-    plan = planner.create_plan(parsed)
-
-    #  3. Data
-    data = get_dummy_data()
-
-    #  4. Execute agents
-    execution = orchestrator.execute(plan, data)
-
     return {
-        "goal": user_input,
-        "parsed_intent": parsed,
-        "plan": plan,
-        "execution": execution,
+        "decision": decision,
+        "simulation": simulation,
+        "impact": impact,
+        "metrics": {
+            "distribution_change": distribution_change
+        }
     }

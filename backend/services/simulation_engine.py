@@ -1,24 +1,28 @@
-def simulate_without_ai(data):
-    result = []
+def simulate(decision):
+    locations = decision["full"]["plan"]
 
-    for loc in data:
-        if "Parapat" in loc["name"] or "Tomok" in loc["name"]:
-            loc["simulated_crowd"] = min(100, loc["crowd"] + 20)
+    before = {}
+    after = {}
+
+    total_visitors = 100  # asumsi total wisatawan
+
+    # BEFORE (distribusi asli berdasarkan crowd)
+    total_crowd = sum(loc["crowd"] for loc in locations)
+
+    for loc in locations:
+        before[loc["name"]] = round((loc["crowd"] / total_crowd) * total_visitors)
+
+    # AFTER (redistribusi ke tempat terbaik)
+    best = decision["final_decision"]["name"]
+
+    for loc in locations:
+        if loc["name"] == best:
+            after[loc["name"]] = before[loc["name"]] + 20
         else:
-            loc["simulated_crowd"] = max(0, loc["crowd"] - 10)
+            after[loc["name"]] = max(0, before[loc["name"]] - 10)
 
-        result.append(loc)
-
-    return result
-
-
-def simulate_with_ai(data):
-    result = []
-
-    avg = sum([d["crowd"] for d in data]) / len(data)
-
-    for loc in data:
-        loc["simulated_crowd"] = int((loc["crowd"] + avg) / 2)
-        result.append(loc)
-
-    return result
+    return {
+        "before": before,
+        "after": after,
+        "best_location": best
+    }
