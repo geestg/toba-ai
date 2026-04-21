@@ -1,86 +1,51 @@
 body {
   margin: 0;
-  font-family: sans-serif;
-  background: #0f172a;
+  background: #020617;
   color: white;
+  font-family: sans-serif;
 }
 
-.app {
-  padding: 30px;
-  max-width: 900px;
-  margin: auto;
-}
-
-h1 {
-  text-align: center;
-  color: #38bdf8;
-}
-
-.chat {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.chat input {
-  flex: 1;
-  padding: 12px;
-  border-radius: 8px;
-  border: none;
-}
-
-.chat button {
-  padding: 12px;
-  background: #38bdf8;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.card {
-  background: #1e293b;
+.main {
   padding: 20px;
-  border-radius: 12px;
-  margin-top: 20px;
-}
-
-.card img {
-  width: 100%;
-  border-radius: 10px;
 }
 
 .grid {
   display: flex;
+  gap: 20px;
+}
+
+.card {
+  background: #111827;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.image-wrap img {
+  width: 200px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.chat {
+  margin-top: 20px;
+  display: flex;
   gap: 10px;
 }
 
-.mini-card img {
-  width: 100px;
-  border-radius: 8px;
+.chat input {
+  flex: 1;
+  padding: 10px;
 }
 
-.impact {
-  background: #1e293b;
-  padding: 20px;
-  margin-top: 20px;
-  border-radius: 12px;
-}
-
-.flow {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
+.map {
+  height: 300px;
   margin-top: 20px;
 }
 
-.agent {
-  background: #38bdf8;
-  color: black;
-  padding: 6px 10px;
-  border-radius: 6px;
-}
-
-.loader {
-  text-align: center;
+.chart {
   margin-top: 20px;
 }

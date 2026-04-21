@@ -1,30 +1,99 @@
-# orchestrator.py
-from backend.agents.intent_agent import run_intent
-from backend.agents.planner_agent import run_planner
-from backend.agents.environment_agent import run_environment
-from backend.agents.routing_agent import run_routing
-from backend.agents.cost_agent import run_cost
-from backend.agents.weather_agent import run_weather
-from backend.agents.umkm_agent import run_umkm
-from backend.core.decision_engine import make_decision
+from backend.agents.intent_agent import detect_intent
+from backend.agents.recommendation_agent import get_recommendation
+from backend.agents.route_agent import get_route
+from backend.agents.umkm_agent import get_umkm_insight
+from backend.agents.weather_agent import get_weather
 
-def orchestrate(user_input, data):
-    intent = run_intent(user_input)
-    plan = run_planner(intent, data)
-    env = run_environment(plan)
-    route = run_routing(plan)
-    cost = run_cost(plan)
-    weather = run_weather(plan)
-    umkm = run_umkm(plan)
+from backend.agents.memory_agent import update_memory, get_memory
+from backend.agents.personalization_agent import personalize
+from backend.agents.decision_agent import decide
+from backend.agents.simulation_agent import simulate_impact
+from backend.agents.crowd_agent import estimate_crowd
 
-    decision = make_decision({
+from backend.core.llm_client import generate_reasoning
+
+
+async def handle_chat(message, lat, lng, user_id="default_user"):
+    # 1. DETECT INTENT
+    intent = detect_intent(message)
+
+    # 2. UPDATE MEMORY
+    memory = update_memory(user_id, message)
+
+    response = {
         "intent": intent,
-        "plan": plan,
-        "environment": env,
-        "routing": route,
-        "cost": cost,
-        "weather": weather,
-        "umkm": umkm
-    })
+        "reply": "",
+        "data": {}
+    }
 
-    return decision
+    # =========================
+    # FLOW
+    # =========================
+    if intent == "recommendation":
+
+        # 3. GET DATA
+        recs = get_recommendation()
+
+        # 4. PERSONALIZATION
+        recs = personalize(recs, memory)
+
+        # 5. CONTEXT ANALYSIS
+        weather = get_weather(recs[0]["name"])
+        crowd = estimate_crowd(recs[0]["name"])
+
+        # 6. DECISION ENGINE
+        best = decide(recs, weather, crowd)
+
+        # 7. EXTRA INSIGHT
+        umkm = get_umkm_insight(best)
+        impact = simulate_impact(best)
+
+        # 8. GPT REASONING 
+        try:
+            reasoning = generate_reasoning({
+                "user_input": message,
+                "chosen": best,
+                "weather": weather,
+                "crowd": crowd,
+                "umkm": umkm,
+                "impact": impact
+            })
+        except Exception as e:
+            # fallback kalau API error
+            reasoning = f"{best['name']} paling cocok karena kondisi lebih optimal saat ini."
+
+        # 9. SAVE MEMORY (OPTIONAL IMPROVE)
+        update_memory(user_id, message, location=best["name"])
+
+        # 10. FINAL RESPONSE
+        response["reply"] = reasoning
+
+        response["data"] = {
+            "destinations": recs,
+            "chosen": best,
+            "weather": weather,
+            "crowd": crowd,
+            "umkm": umkm,
+            "impact": impact
+        }
+
+    # =========================
+    # ROUTE FLOW
+    # =========================
+    elif intent == "route":
+
+        route = get_route(lat, lng, message)
+
+        response["reply"] = "Ini rute paling masuk akal buat perjalanan kau."
+
+        response["data"] = {
+            "route": route
+        }
+
+    # =========================
+    # FALLBACK
+    # =========================
+    else:
+        response["reply"] = "Jelaskan tujuan kau dengan jelas, jangan bikin sistem mikir sendiri."
+
+    return response

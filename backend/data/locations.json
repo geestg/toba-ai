@@ -1,6 +1,23 @@
 [
-  {"name": "Parapat", "crowd": 80},
-  {"name": "Samosir", "crowd": 50},
-  {"name": "Balige", "crowd": 30},
-  {"name": "Sipinsur", "crowd": 20}
+  {
+    "name": "Holbung",
+    "rating": 4.6,
+    "temperature": 30,
+    "has_souvenir": false,
+    "has_seating": false
+  },
+  {
+    "name": "Sibea-bea",
+    "rating": 4.7,
+    "temperature": 25,
+    "has_souvenir": true,
+    "has_seating": false
+  },
+  {
+    "name": "Sipinsur",
+    "rating": 4.8,
+    "temperature": 26,
+    "has_souvenir": false,
+    "has_seating": true
+  }
 ]
