@@ -21,7 +21,7 @@ async def handle_chat(message, lat, lng, user_id="default_user"):
     # 1. INTENT
     intent = detect_intent(message)
 
-    # 2. MEMORY (SAFE)
+    # 2. MEMORY
     memory = update_memory(user_id, message)
 
     response = {
@@ -38,18 +38,43 @@ async def handle_chat(message, lat, lng, user_id="default_user"):
         # 3. RECOMMENDATION
         recs = get_recommendation()
 
+        # GUARD: kalau kosong
+        if not recs:
+            return {
+                "intent": intent,
+                "reply": "Data destinasi kosong, sistem lagi ga waras.",
+                "data": {}
+            }
+
         # 4. PERSONALIZATION
         recs = personalize(recs, memory)
 
-        # 5. CONTEXT
-        weather = get_weather(recs[0]["name"])
-        crowd = estimate_crowd(recs[0]["name"])
+        # GUARD lagi (habis personalize bisa kosong juga)
+        if not recs:
+            return {
+                "intent": intent,
+                "reply": "Rekomendasi habis difilter jadi kosong.",
+                "data": {}
+            }
+
+        # 5. CONTEXT (pakai first item)
+        first = recs[0]
+
+        weather = get_weather(first["name"])
+        crowd = estimate_crowd(first["name"])
 
         # 6. DECISION
         best = decide(recs, weather, crowd)
 
+        if not best:
+            return {
+                "intent": intent,
+                "reply": "Ga ada pilihan yang cocok sekarang.",
+                "data": {}
+            }
+
         # 7. INSIGHT
-        umkm = get_umkm_insight(best)
+        umkm = get_umkm_insight(best, weather)
         impact = simulate_impact(best)
 
         # 8. PLAN
@@ -71,21 +96,17 @@ async def handle_chat(message, lat, lng, user_id="default_user"):
                 "booking": booking
             })
 
-            response["reply"] = reasoning.get("reason", "")
-
-            response["data"].update({
-                "highlight": reasoning.get("highlight"),
-                "summary": reasoning.get("summary"),
-            })
+            # FIX TYPE (string vs dict)
+            if isinstance(reasoning, dict):
+                response["reply"] = reasoning.get("reason", "")
+                response["data"]["highlight"] = reasoning.get("highlight")
+                response["data"]["summary"] = reasoning.get("summary")
+            else:
+                response["reply"] = reasoning
 
         except Exception as e:
             print("LLM ERROR:", e)
             response["reply"] = f"{best['name']} paling cocok saat ini."
-
-        # JANGAN ADA PARAMETER ANEH
-        # update_memory(user_id, message, location=best["name"])
-
-        # kalau mau simpan lokasi, kita upgrade nanti, jangan sekarang bikin error
 
         # 11. RESPONSE DATA
         response["data"].update({
@@ -104,13 +125,18 @@ async def handle_chat(message, lat, lng, user_id="default_user"):
     # =========================
     elif intent == "route":
 
-        route = get_route(lat, lng, message)
+        try:
+            route = get_route(lat, lng, message)
 
-        response["reply"] = "Ini rute paling pas buat perjalanan kau lek."
+            response["reply"] = "Ini rute paling pas buat perjalanan kau lek."
 
-        response["data"] = {
-            "route": route
-        }
+            response["data"] = {
+                "route": route
+            }
+
+        except Exception as e:
+            print("ROUTE ERROR:", e)
+            response["reply"] = "Route error, backend lo lagi ngaco."
 
     # =========================
     # FALLBACK

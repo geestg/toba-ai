@@ -1,13 +1,12 @@
-def get_umkm_insight(location):
-    insights = []
-
-    if location["temperature"] > 28:
-        insights.append("Cocok buka minuman dingin / es krim")
-
-    if not location.get("has_souvenir"):
-        insights.append("Belum ada toko souvenir")
-
-    if not location.get("has_seating"):
-        insights.append("Belum ada penyewaan tikar / tempat duduk")
-
-    return insights
+def get_umkm_insight(location, weather):
+    
+    if weather["temperature"] > 28:
+        return {
+            "suggestion": "Minuman dingin & jajanan ringan bakal laris",
+            "impact": "UMKM minuman meningkat"
+        }
+    else:
+        return {
+            "suggestion": "Makanan hangat lebih diminati",
+            "impact": "UMKM kuliner tradisional naik"
+        }

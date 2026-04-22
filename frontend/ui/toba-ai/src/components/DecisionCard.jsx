@@ -3,7 +3,7 @@ export default function DecisionCard({ data }) {
 
   return (
     <div className="decision-card">
-      <h2>🎯 Rekomendasi AI</h2>
+      <h2>Rekomendasi AI</h2>
 
       <h3>{data.chosen.name}</h3>
 
