@@ -2,22 +2,36 @@
   {
     "name": "Holbung",
     "rating": 4.6,
-    "temperature": 30,
-    "has_souvenir": false,
-    "has_seating": false
+    "lat": 2.654,
+    "lng": 98.866,
+    "type": "nature"
   },
   {
-    "name": "Sibea-bea",
+    "name": "Sibea",
     "rating": 4.7,
-    "temperature": 25,
-    "has_souvenir": true,
-    "has_seating": false
+    "lat": 2.589,
+    "lng": 98.912,
+    "type": "religious"
   },
   {
     "name": "Sipinsur",
     "rating": 4.8,
-    "temperature": 26,
-    "has_souvenir": false,
-    "has_seating": true
+    "lat": 2.335,
+    "lng": 98.867,
+    "type": "viewpoint"
+  },
+  {
+    "name": "Pakkodian",
+    "rating": 4.5,
+    "lat": 2.500,
+    "lng": 98.900,
+    "type": "camping"
+  },
+  {
+    "name": "Parbaba",
+    "rating": 4.6,
+    "lat": 2.700,
+    "lng": 98.850,
+    "type": "beach"
   }
 ]

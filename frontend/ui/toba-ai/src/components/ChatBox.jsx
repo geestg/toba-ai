@@ -1,33 +1,54 @@
 import { useState } from "react";
 import { sendMessage } from "../services/api";
 
-export default function ChatBox({ setResponse }) {
-  const [input, setInput] = useState("");
+export default function ChatBox({ onResult }) {
+  const [message, setMessage] = useState("");
+  const [chat, setChat] = useState([]);
 
   const handleSend = async () => {
-    if (!input) return;
+    if (!message) return;
 
-    const position = await new Promise((res) =>
-      navigator.geolocation.getCurrentPosition(res)
-    );
+    const userMsg = { role: "user", text: message };
+    setChat((prev) => [...prev, userMsg]);
 
-    const lat = position.coords.latitude;
-    const lng = position.coords.longitude;
+    const res = await sendMessage(message);
 
-    const result = await sendMessage(input, lat, lng);
+    const botMsg = {
+      role: "bot",
+      text: res.reply,
+      reasoning: res.reasoning,
+    };
 
-    setResponse(result);
-    setInput("");
+    setChat((prev) => [...prev, botMsg]);
+
+    // 🔥 INI KUNCI
+    if (onResult) onResult(res);
+
+    setMessage("");
   };
 
   return (
-    <div className="chat">
-      <input
-        value={input}
-        onChange={(e) => setInput(e.target.value)}
-        placeholder="Mau kemana hari ini?"
-      />
-      <button onClick={handleSend}>Kirim</button>
+    <div>
+      <div className="chat-container">
+        {chat.map((c, i) => (
+          <div key={i} className={`bubble ${c.role}`}>
+            {c.text}
+
+            {c.reasoning && (
+              <div className="reasoning">{c.reasoning}</div>
+            )}
+          </div>
+        ))}
+      </div>
+
+      <div className="chat-bar">
+        <input
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          placeholder="Mau kemana hari ini..."
+        />
+        <button onClick={handleSend}>➤</button>
+      </div>
     </div>
   );
 }

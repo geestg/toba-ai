@@ -1,51 +1,5 @@
 body {
   margin: 0;
-  background: #020617;
-  color: white;
-  font-family: sans-serif;
-}
-
-.main {
-  padding: 20px;
-}
-
-.grid {
-  display: flex;
-  gap: 20px;
-}
-
-.card {
-  background: #111827;
-  border-radius: 16px;
-  overflow: hidden;
-}
-
-.image-wrap img {
-  width: 200px;
-  height: 120px;
-  object-fit: cover;
-}
-
-.card-content {
-  padding: 10px;
-}
-
-.chat {
-  margin-top: 20px;
-  display: flex;
-  gap: 10px;
-}
-
-.chat input {
-  flex: 1;
-  padding: 10px;
-}
-
-.map {
-  height: 300px;
-  margin-top: 20px;
-}
-
-.chart {
-  margin-top: 20px;
+  font-family: 'Inter', sans-serif;
+  background: #050816;
 }

@@ -1,15 +1,11 @@
-def personalize(destinations, user_memory):
+def personalize(recs, user_memory):
+    if not isinstance(user_memory, dict):
+        return recs  # skip personalization kalau memory kacau
+
     prefs = user_memory.get("preferences", {})
 
-    for d in destinations:
-        score = d["rating"]
+    # contoh simple: boost nature
+    if prefs.get("type") == "nature":
+        recs = sorted(recs, key=lambda x: x.get("type") != "nature")
 
-        if prefs.get("prefer_cool") and d["temperature"] < 26:
-            score += 0.5
-
-        if prefs.get("avoid_hot") and d["temperature"] > 28:
-            score -= 0.5
-
-        d["score"] = score
-
-    return sorted(destinations, key=lambda x: x["score"], reverse=True)
+    return recs

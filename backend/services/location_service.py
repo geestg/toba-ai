@@ -1,5 +1,12 @@
+import os
 import json
 
+DATA_FILE = "data/locations.json"
+
 def get_locations():
-    with open("data/locations.json", "r") as f:
+    if not os.path.exists(DATA_FILE):
+        print("WARNING: locations.json not found")
+        return []
+
+    with open(DATA_FILE, "r") as f:
         return json.load(f)

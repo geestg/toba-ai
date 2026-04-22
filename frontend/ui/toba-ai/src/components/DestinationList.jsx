@@ -1,43 +1,18 @@
-import { useEffect, useRef } from "react";
-import destinations from "../data/destinations";
-
-export default function DestinationList() {
-  const ref = useRef();
-
-  useEffect(() => {
-    const el = ref.current;
-
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          el.classList.add("show");
-        }
-      },
-      { threshold: 0.2 }
-    );
-
-    observer.observe(el);
-  }, []);
+export default function DestinationList({ data }) {
+  if (!data?.destinations) return null;
 
   return (
-    <div ref={ref} className="fade-in">
-      <h2>Destinasi Trending</h2>
-
-      <div className="grid">
-        {destinations.map((d, i) => (
-          <div key={i} className="card">
-            <div className="image-wrap">
-              <img src={d.image} />
-            </div>
-            <div className="card-content">
-              <h3>{d.name}</h3>
-              <p>⭐ {d.rating}</p>
-              <p style={{ fontSize: 12, opacity: 0.6 }}>
-                {d.weather} • {d.crowd}</p>
-            </div>
+    <div className="dest-grid">
+      {data.destinations.map((d, i) => (
+        <div key={i} className="dest-card">
+          <img src={d.image} alt={d.name} />
+          <div className="overlay" />
+          <div className="content">
+            <h3>{d.name}</h3>
+            <span>⭐ {d.rating}</span>
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
     </div>
   );
 }

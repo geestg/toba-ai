@@ -1,19 +1,18 @@
 export default function DecisionCard({ data }) {
-  const d = data.decision.final_decision;
+  if (!data?.chosen) return null;
 
   return (
-    <div className="decision">
-      <h2>Rekomendasi Utama</h2>
+    <div className="decision-card">
+      <h2>🎯 Rekomendasi AI</h2>
 
-      <h3>{d.name}</h3>
-      <p>{d.description}</p>
+      <h3>{data.chosen.name}</h3>
 
-      <hr />
+      <p><b>Cuaca:</b> {data.weather.condition}</p>
+      <p><b>Crowd:</b> {data.crowd.level} ({data.crowd.trend})</p>
 
-      <p><b>Alasan Sistem:</b></p>
-      <p>{data.decision.reason}</p>
-
-      <p>{data.decision.explanation}</p>
+      <div className="reasoning">
+        {data.summary || "AI memilih lokasi ini berdasarkan kondisi optimal saat ini."}
+      </div>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import destinations from "../data/destinations";
+import { destinations } from "../data/destinations";
 
 export default function DestinationCarousel() {
   return (
