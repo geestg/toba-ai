@@ -10,8 +10,8 @@ from dotenv import load_dotenv
 # ========================
 load_dotenv()
 
-API_KEY = os.getenv("OPENAI_API_KEY")
-URL = "https://api.openai.com/v1/chat/completions"
+API_KEY = os.getenv("GROQ_API_KEY")
+URL = "https://api.groq.com/openai/v1/chat/completions"
 
 # ========================
 # CACHE CONFIG
@@ -89,7 +89,7 @@ Gunakan bahasa santai tapi tetap profesional.
                 "Content-Type": "application/json"
             },
             json={
-                "model": "gpt-4o-mini",
+                "model": "llama3-70b-8192",
                 "messages": [
                     {"role": "user", "content": prompt}
                 ],
