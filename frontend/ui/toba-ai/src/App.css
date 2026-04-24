@@ -27,7 +27,7 @@ body::before {
 /* HERO */
 .hero {
   position: relative;
-  height: 320px;
+  height: 350px;
   border-radius: 24px;
   overflow: hidden;
   margin: 20px;
@@ -109,17 +109,39 @@ body::before {
   opacity: 0.6;
 }
 
-/* 🔥 DESTINATION SINGLE ROW */
+/* DESTINATION */
 .destination-wrapper {
-  margin: 20px;
-  overflow: hidden; /* ini bikin keliatan cuma sebagian */
+  position: relative;
+  margin: 10px 20px 0; /* FIX spacing */
+  overflow: hidden;
+  transition: all 0.4s ease;
 }
 
+/* shrink mode */
+.destination-wrapper.shrink {
+  transform: scale(0.9);
+  opacity: 0.6;
+}
+
+/* fade kanan */
+.destination-wrapper::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  background: linear-gradient(to right, transparent, #050816);
+  pointer-events: none;
+}
+
+/* SCROLL */
 .card-container.single {
   display: flex;
   gap: 20px;
   overflow-x: auto;
   scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
   padding-bottom: 10px;
 }
 
@@ -131,8 +153,13 @@ body::before {
   overflow: hidden;
   position: relative;
   cursor: pointer;
-  transition: 0.3s;
-  flex-shrink: 0; /* WAJIB biar ga gepeng */
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  transition: all 0.25s ease;
+}
+
+.card.featured {
+  min-width: 300px;
 }
 
 .card img {
@@ -142,8 +169,8 @@ body::before {
 }
 
 .card:hover {
-  transform: scale(1.06);
-  box-shadow: 0 0 25px rgba(0,255,255,0.25);
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 20px 40px rgba(0,255,255,0.2);
 }
 
 .card.active {
@@ -160,7 +187,17 @@ body::before {
   background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
 }
 
-/* scrollbar */
+.card-overlay h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card-overlay span {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+/* SCROLLBAR */
 .card-container.single::-webkit-scrollbar {
   height: 6px;
 }
@@ -170,22 +207,44 @@ body::before {
   border-radius: 10px;
 }
 
-/* CHAT */
+/* ========================= */
+/* 🔥 CHAT (CORE EXPERIENCE) */
+/* ========================= */
+
 .chat-container {
+  position: relative;
   padding: 20px;
+  margin-top: 40px;
+  padding-bottom: 120px;
+
   display: flex;
   flex-direction: column;
   gap: 16px;
+
   max-width: 900px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  min-height: 60vh; /* center gravity */
+  justify-content: flex-start;
+
   animation: fadeIn 0.4s ease;
+}
+
+/* background depth */
+.chat-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(0,255,255,0.05), transparent);
+  pointer-events: none;
 }
 
 /* ROW */
 .chat-row {
   display: flex;
   flex-direction: column;
-  max-width: 70%;
+  max-width: 80%; /* FIX bubble size */
   animation: fadeIn 0.3s ease;
 }
 
@@ -255,12 +314,17 @@ body::before {
   left: 50%;
   transform: translateX(-50%);
   width: 60%;
+
   display: flex;
   background: rgba(10,15,30,0.6);
   backdrop-filter: blur(20px);
   border-radius: 999px;
   padding: 10px;
-  box-shadow: 0 0 40px rgba(0,255,255,0.25);
+
+  box-shadow: 
+    0 0 40px rgba(0,255,255,0.25),
+    inset 0 0 20px rgba(0,255,255,0.05);
+
   border: 1px solid rgba(255,255,255,0.1);
   z-index: 999;
 }
@@ -308,5 +372,9 @@ body::before {
   .card {
     min-width: 180px;
     height: 220px;
+  }
+
+  .card.featured {
+    min-width: 240px;
   }
 }

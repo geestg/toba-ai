@@ -10,12 +10,15 @@ function App() {
 
   const scrollRef = useRef(null);
 
+  // 🔥 DETECT ADA CHAT ATAU BELUM
+  const hasChat = messages.length > 0;
+
   const scrollToDestination = (name) => {
     const index = destinations.findIndex((d) => d.name === name);
     if (index === -1 || !scrollRef.current) return;
 
     scrollRef.current.scrollTo({
-      left: index * 240,
+      left: index * 260,
       behavior: "smooth",
     });
   };
@@ -45,21 +48,30 @@ function App() {
       }
 
       if (data.reply) {
-        setMessages((prev) => [...prev, { role: "bot", text: data.reply }]);
+        setMessages((prev) => [
+          ...prev,
+          { role: "bot", text: data.reply },
+        ]);
       }
 
       if (data.data?.route) {
-        setMessages((prev) => [...prev, { role: "bot", route: data.data.route }]);
+        setMessages((prev) => [
+          ...prev,
+          { role: "bot", route: data.data.route },
+        ]);
       }
 
       if (data.data?.impact) {
-        setMessages((prev) => [...prev, { role: "bot", impact: data.data.impact }]);
+        setMessages((prev) => [
+          ...prev,
+          { role: "bot", impact: data.data.impact },
+        ]);
       }
 
     } catch {
       setMessages((prev) => [
         ...prev,
-        { role: "bot", text: "Server error, backend lo lagi ngambek." },
+        { role: "bot", text: "Server error, backend lagi lucak." },
       ]);
     }
 
@@ -106,13 +118,13 @@ function App() {
         <p>Mau kemana nih lek?</p>
       </div>
 
-      {/* 🔥 SINGLE ROW SCROLL */}
-      <div className="destination-wrapper">
+      {/* 🔥 DESTINATION (AUTO SHRINK) */}
+      <div className={`destination-wrapper ${hasChat ? "shrink" : ""}`}>
         <div className="card-container single" ref={scrollRef}>
           {destinations.map((d, i) => (
             <div
               key={i}
-              className={`card ${
+              className={`card ${i === 0 ? "featured" : ""} ${
                 selected?.name === d.name ? "active" : ""
               }`}
               onClick={() => sendMessage(`Saya mau ke ${d.name}`)}
@@ -127,12 +139,16 @@ function App() {
         </div>
       </div>
 
-      {/* CHAT */}
+      {/* 🔥 CHAT (MAIN FOCUS) */}
       <div className="chat-container">
         {messages.map((msg, i) => (
           <div key={i} className={`chat-row ${msg.role}`}>
 
-            {msg.text && <div className="chat-bubble">{msg.text}</div>}
+            {msg.text && (
+              <div className="chat-bubble">
+                {msg.text}
+              </div>
+            )}
 
             {msg.route && (
               <div className="chat-map">
