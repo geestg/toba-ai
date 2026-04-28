@@ -34,6 +34,13 @@ export default function MapView({ route, startCoords, endCoords }) {
   if (route) {
     if (Array.isArray(route)) {
       routeCoordinates = route;
+    } else if (route.path && Array.isArray(route.path)) {
+      // Smart route: OSRM returns [lng, lat], Leaflet needs [lat, lng]
+      routeCoordinates = route.path.map((coord) =>
+        Array.isArray(coord) && coord.length === 2
+          ? [coord[1], coord[0]] // swap lng,lat → lat,lng
+          : coord
+      );
     } else if (route.coordinates && Array.isArray(route.coordinates)) {
       routeCoordinates = route.coordinates;
     } else if (route.geometry && Array.isArray(route.geometry)) {
@@ -107,6 +114,7 @@ export default function MapView({ route, startCoords, endCoords }) {
           </Marker>
         )}
       </MapContainer>
+      
     </div>
   );
 }

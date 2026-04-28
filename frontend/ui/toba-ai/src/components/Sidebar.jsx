@@ -33,7 +33,7 @@ export default function Sidebar({ isOpen, onToggle, themeMode, onToggleTheme, gp
 
   const menuItems = [
     { icon: "💬", label: "Chat dengan AI Toba", path: "/" },
-    { icon: "♡", label: "Favorit", path: "/favorites" },
+    { icon: "🗺️", label: "Riwayat Kunjungan", path: "/riwayat" },
     { icon: "ℹ", label: "Tentang AI Toba", path: "/about" },
   ];
 

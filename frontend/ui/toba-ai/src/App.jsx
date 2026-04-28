@@ -4,11 +4,23 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import MapView from "./components/MapView";
 import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
-import FavoritesPage from "./pages/FavoritesPage";
+import VisitedPage from "./pages/VisitedPage";
 import AboutPage from "./pages/AboutPage";
-import { getRoute } from "./services/api";
+import DestinationList from "./components/DestinationList";
+import { sendMessage as apiSendMessage, saveUserLocation, getRoute } from "./services/api";
 
-function ChatPage({ messages, setMessages, input, setInput, sendMessage, handleInputKeyDown, showQuickActions, activeLocation }) {
+function ChatPage({
+  messages,
+  setMessages,
+  input,
+  setInput,
+  sendMessage,
+  handleInputKeyDown,
+  showQuickActions,
+  activeLocation,
+  onSelectDestination,
+  selectedDestination,
+}) {
   return (
     <>
       <section className="hero-compact">
@@ -40,6 +52,15 @@ function ChatPage({ messages, setMessages, input, setInput, sendMessage, handleI
                 </div>
               )}
 
+              {msg.destinations && (
+                <div className="chat-destinations">
+                  <DestinationList
+                    data={{ destinations: msg.destinations }}
+                    onSelectDestination={onSelectDestination}
+                  />
+                </div>
+              )}
+
               {msg.route && (
                 <div className="chat-map">
                   <MapView
@@ -53,6 +74,23 @@ function ChatPage({ messages, setMessages, input, setInput, sendMessage, handleI
               {msg.impact && (
                 <div className="chat-impact">
                   Crowd: {msg.impact.before} → {msg.impact.after}
+                </div>
+              )}
+
+              {msg.followUpOptions && (
+                <div className="follow-up-options">
+                  <p className="follow-up-text">{msg.followUpText}</p>
+                  <div className="follow-up-buttons">
+                    {msg.followUpOptions.map((opt, idx) => (
+                      <button
+                        key={idx}
+                        className="follow-up-button"
+                        onClick={() => sendMessage(opt.action)}
+                      >
+                        {opt.label}
+                      </button>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>
@@ -113,10 +151,34 @@ function App() {
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
   const [activeLocation, setActiveLocation] = useState(null);
+  const [selectedDestination, setSelectedDestination] = useState(null);
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [themeMode, setThemeMode] = useState("siang");
   const [gpsActive, setGpsActive] = useState(false);
   const [gpsLocation, setGpsLocation] = useState(null);
+  const [visitedDestinations, setVisitedDestinations] = useState(() => {
+    const saved = localStorage.getItem("toba-visited");
+    return saved ? JSON.parse(saved) : [];
+  });
+
+  // Auto-request browser geolocation on mount
+  useEffect(() => {
+    if ("geolocation" in navigator) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const loc = {
+            lat: position.coords.latitude,
+            lng: position.coords.longitude,
+          };
+          handleToggleGPS(loc);
+        },
+        (error) => {
+          console.warn("Geolocation denied or failed:", error.message);
+        },
+        { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 }
+      );
+    }
+  }, []);
 
   useEffect(() => {
     document.body.dataset.theme = themeMode;
@@ -129,10 +191,10 @@ function App() {
     setGpsLocation(location);
     setGpsActive(true);
     setActiveLocation({ name: "Lokasi Saya", ...location });
+    saveUserLocation(location.lat, location.lng);
   };
 
   const exampleLocations = {
-    "medan center": { lat: 2.19729, lng: 98.66521 },
     "berastagi": { lat: 2.96833, lng: 98.51833 },
     "sibayak": { lat: 2.95, lng: 98.50 },
     "tip top": { lat: 2.18956, lng: 98.67428 },
@@ -142,7 +204,6 @@ function App() {
 
   const geocodeLocation = async (locationString) => {
     try {
-      // Batasi pencarian ke area Indonesia (viewbox: barat, selatan, timur, utara)
       const viewbox = "95.0,-11.0,141.0,6.0";
       const response = await fetch(
         `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(
@@ -195,18 +256,14 @@ function App() {
     let endLocationStr;
     let startCoords = null;
 
-    // Jika user pakai lokasi aktif (GPS), formatnya: "rute ke [tempat]" atau "jarak ke [tempat]"
     if (useActiveLocation && activeLocation) {
       startLocationStr = activeLocation.name || "Lokasi Saya";
-      // Langsung pakai koordinat GPS, jangan parse string
       startCoords = { lat: activeLocation.lat, lng: activeLocation.lng };
 
-      // Regex: ambil teks setelah kata "ke"
       const routePattern = /(?:rute|jarak).*?\bke\b\s+(.+?)(?:\s*[?!.])?\s*$/i;
       const match = text.match(routePattern);
       endLocationStr = match ? match[1]?.trim() : null;
     } else {
-      // Format manual: "rute dari [A] ke [B]"
       const routePattern = /(?:rute|jarak)\s+(?:dari\s+)?(.+?)\s+ke\s+(.+?)(?:\s*[?!.])?\s*$/i;
       const match = text.match(routePattern);
 
@@ -229,7 +286,6 @@ function App() {
     }
 
     try {
-      // Kalau startCoords belum ada (mode manual), parse dari string
       if (!startCoords) {
         startCoords = await parseLocation(startLocationStr);
       }
@@ -274,7 +330,28 @@ function App() {
     }
   };
 
-  const sendMessage = async (customText) => {
+  const addToVisited = (destination) => {
+    if (!destination || !destination.name) return;
+    setVisitedDestinations((prev) => {
+      const exists = prev.find((d) => d.name === destination.name);
+      if (exists) return prev;
+      const updated = [
+        { ...destination, visitedAt: new Date().toISOString() },
+        ...prev,
+      ];
+      localStorage.setItem("toba-visited", JSON.stringify(updated));
+      return updated;
+    });
+  };
+
+  const handleSelectDestination = (destination) => {
+    setSelectedDestination(destination);
+    addToVisited(destination);
+    // Send select intent to backend
+    sendMessage(`Pilih ${destination.name}`, destination);
+  };
+
+  const sendMessage = async (customText, destinationPayload = null) => {
     const text = customText || input;
     if (!text) return;
 
@@ -306,26 +383,51 @@ function App() {
     }
 
     try {
-      const res = await fetch("http://localhost:8000/chat", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          message: text,
-          lat: 2.684,
-          lng: 98.875,
-        }),
-      });
-
-      const data = await res.json();
-
-      if (data.reply) {
-        setMessages((prev) => [
-          ...prev,
-          { role: "bot", text: data.reply },
-        ]);
+      // Build mobile data from GPS if available
+      let mobileData = null;
+      if (gpsLocation) {
+        mobileData = {
+          data_source: "app_gps",
+          device_lat: gpsLocation.lat,
+          device_lng: gpsLocation.lng,
+          sample_size: 100,
+        };
       }
 
-      if (data.data?.route) {
+      const data = await apiSendMessage(text, destinationPayload, mobileData);
+
+      if (data.reply) {
+        const botMsg = { role: "bot", text: data.reply };
+
+        // If recommendation intent, render destinations
+        if (data.intent === "recommendation" && data.data?.destinations) {
+          botMsg.destinations = data.data.destinations;
+        }
+
+        // If select_destination intent, show follow-up options
+        if (data.intent === "select_destination") {
+          botMsg.followUpText = "Mau saya bantu dengan apa selanjutnya?";
+          botMsg.followUpOptions = [
+            { label: "🗺️ Buat Rute", action: `Buat rute ke ${data.data?.selected_destination?.name || "destinasi"}` },
+            { label: "🍽️ Cari Rumah Makan", action: "Cari rumah makan sekitar" },
+            { label: "🏨 Cari Penginapan", action: "Cari penginapan sekitar" },
+          ];
+          setSelectedDestination(data.data?.selected_destination || null);
+          addToVisited(data.data?.selected_destination);
+        }
+
+        // If route intent from backend
+        if (data.intent === "route" && data.data?.route) {
+          botMsg.route = data.data.route;
+          botMsg.startCoords = data.data.start;
+          botMsg.endCoords = data.data.end;
+          
+        }
+
+        setMessages((prev) => [...prev, botMsg]);
+      }
+
+      if (data.data?.route && data.intent !== "route") {
         setMessages((prev) => [
           ...prev,
           { role: "bot", route: data.data.route },
@@ -388,10 +490,12 @@ function App() {
                 handleInputKeyDown={handleInputKeyDown}
                 showQuickActions={showQuickActions}
                 activeLocation={activeLocation}
+                onSelectDestination={handleSelectDestination}
+                selectedDestination={selectedDestination}
               />
             }
           />
-          <Route path="/favorites" element={<FavoritesPage />} />
+          <Route path="/riwayat" element={<VisitedPage />} />
           <Route path="/about" element={<AboutPage />} />
         </Routes>
       </main>

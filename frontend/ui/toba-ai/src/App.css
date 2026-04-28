@@ -1898,6 +1898,199 @@ body[data-theme="malam"] .about-cta p {
   color: #e5eefc;
 }
 
+/* ========================================= */
+/* CULINARY CARD */
+/* ========================================= */ 
+
+.chat-culinary {
+  margin-top: 10px;
+  max-width: 460px;
+}
+
+.culinary-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(34, 51, 76, 0.08);
+}
+
+.culinary-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 18px;
+  background: linear-gradient(135deg, #fff8f0, #fff2e7);
+  border-bottom: 1px solid #f1e0d0;
+}
+
+.culinary-icon {
+  font-size: 28px;
+  line-height: 1;
+}
+
+.culinary-title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1d314c;
+}
+
+.culinary-subtitle {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: #8a7a6a;
+}
+
+.culinary-list {
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.culinary-item {
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #f8fbfe;
+  border: 1px solid #e8eef5;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.culinary-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(16, 44, 66, 0.07);
+}
+
+.culinary-item-main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.culinary-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.culinary-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: capitalize;
+  width: fit-content;
+}
+
+.culinary-name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1d314c;
+  line-height: 1.3;
+}
+
+.culinary-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.culinary-rating {
+  font-size: 12px;
+  font-weight: 600;
+  color: #d4a017;
+}
+
+.culinary-distance {
+  font-size: 11px;
+  color: #5f6f80;
+  font-weight: 500;
+}
+
+.culinary-footer {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 16px;
+  background: #f5f9ff;
+  border-top: 1px solid #e2e8f0;
+}
+
+.culinary-tip-icon {
+  font-size: 16px;
+  line-height: 1;
+  margin-top: 2px;
+}
+
+.culinary-tip {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #4a5a6e;
+}
+
+/* Dark mode culinary */
+.app-shell.theme-night .culinary-card,
+body[data-theme="malam"] .culinary-card {
+  background: #16243d;
+  border-color: rgba(157, 176, 204, 0.16);
+}
+
+.app-shell.theme-night .culinary-header,
+body[data-theme="malam"] .culinary-header {
+  background: linear-gradient(135deg, #2a2210, #1a2733);
+  border-color: rgba(241, 210, 146, 0.2);
+}
+
+.app-shell.theme-night .culinary-title,
+body[data-theme="malam"] .culinary-title {
+  color: #e5eefc;
+}
+
+.app-shell.theme-night .culinary-subtitle,
+body[data-theme="malam"] .culinary-subtitle {
+  color: #9db0cc;
+}
+
+.app-shell.theme-night .culinary-item,
+body[data-theme="malam"] .culinary-item {
+  background: #1a2e4a;
+  border-color: rgba(157, 176, 204, 0.12);
+}
+
+.app-shell.theme-night .culinary-name,
+body[data-theme="malam"] .culinary-name {
+  color: #e5eefc;
+}
+
+.app-shell.theme-night .culinary-rating,
+body[data-theme="malam"] .culinary-rating {
+  color: #f1d292;
+}
+
+.app-shell.theme-night .culinary-distance,
+body[data-theme="malam"] .culinary-distance {
+  color: #9db0cc;
+}
+
+.app-shell.theme-night .culinary-footer,
+body[data-theme="malam"] .culinary-footer {
+  background: #1a2e4a;
+  border-color: rgba(157, 176, 204, 0.12);
+}
+
+.app-shell.theme-night .culinary-tip,
+body[data-theme="malam"] .culinary-tip {
+  color: #b0c0d4;
+}
+
 @media (max-width: 900px) {
   .about-features-grid {
     grid-template-columns: repeat(2, 1fr);

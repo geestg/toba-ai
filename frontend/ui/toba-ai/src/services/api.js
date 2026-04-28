@@ -1,17 +1,59 @@
-export async function sendMessage(message) {
-  const res = await fetch("http://localhost:8000/chat", {
+const API_BASE = "http://localhost:8000";
+
+function getUserId() {
+  let userId = localStorage.getItem("toba_user_id");
+  if (!userId) {
+    userId = "user_" + Math.random().toString(36).substring(2, 10);
+    localStorage.setItem("toba_user_id", userId);
+  }
+  return userId;
+}
+
+function getUserLocation() {
+  const lat = localStorage.getItem("toba_user_lat");
+  const lng = localStorage.getItem("toba_user_lng");
+  if (lat && lng) {
+    return { lat: parseFloat(lat), lng: parseFloat(lng) };
+  }
+  return null;
+}
+
+export async function sendMessage(message, selectedDestination = null, mobileData = null) {
+  const userId = getUserId();
+  const location = getUserLocation();
+
+  const payload = {
+    message,
+    user_id: userId,
+  };
+
+  if (location) {
+    payload.lat = location.lat;
+    payload.lng = location.lng;
+  }
+
+  if (selectedDestination) {
+    payload.selected_destination = selectedDestination;
+  }
+
+  if (mobileData) {
+    payload.mobile_data = mobileData;
+  }
+
+  const res = await fetch(`${API_BASE}/chat`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({
-      message,
-      lat: -2.5,
-      lng: 99.1,
-    }),
+    body: JSON.stringify(payload),
   });
 
   return res.json();
+}
+
+export function saveUserLocation(lat, lng) {
+  localStorage.setItem("toba_user_lat", lat.toString());
+  localStorage.setItem("toba_user_lng", lng.toString());
 }
 
 /* =========================================
