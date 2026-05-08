@@ -1,54 +1,488 @@
 [
-  { "user_id": "user_ulmfea42", "selected_destination": null, "last_intent": "recommendation", "conversation_history": ["hhu", "hi"] },
-  { "user_id": "user_demo_1", "selected_destination": "Pantai Parbaba", "last_intent": "booking", "conversation_history": ["carikan hotel", "berapa harga hotel terdekat?"] },
-  { "user_id": "user_demo_2", "selected_destination": "Bukit Holbung", "last_intent": "recommendation", "conversation_history": ["rekomendasi tempat foto", "apa aktivitas di sana?"] },
-  { "user_id": "user_demo_3", "selected_destination": null, "last_intent": "weather", "conversation_history": ["cuaca di Pantai Parbaba hari ini"] },
-  { "user_id": "user_8ru7zfbr", "selected_destination": null, "last_intent": "recommendation", "conversation_history": ["hi"] },
-  { "user_id": "user_demo_4", "selected_destination": "Desa Tomok", "last_intent": "history", "conversation_history": ["tempat bersejarah", "ada atraksi budaya?"] },
-  { "user_id": "user_demo_5", "selected_destination": "Bukit Sibea Bea", "last_intent": "route", "conversation_history": ["rute ke bukit", "berapa lama perjalanannya?"] },
-  { "user_id": "user_demo_6", "selected_destination": "Pantai Tongging", "last_intent": "booking", "conversation_history": ["hotel dekat pantai", "yang murah ada?"] },
-  { "user_id": "user_demo_7", "selected_destination": "Kampung Seni", "last_intent": "culinary", "conversation_history": ["makan khas di sekitar sini", "rekomendasi kuliner"] },
-  { "user_id": "user_demo_8", "selected_destination": "Situs Batu Passe", "last_intent": "recommendation", "conversation_history": ["wisata sejarah", "spot foto dekat sana"] },
-  { "user_id": "user_demo_9", "selected_destination": "Bukit Pakkodian", "last_intent": "weather", "conversation_history": ["cuaca di bukit ini", "aman buat datang sore?"] },
-  { "user_id": "user_demo_10", "selected_destination": "Sidihoni Lookout", "last_intent": "route", "conversation_history": ["rute dari medan", "jarak ke lookout"] },
-  { "user_id": "user_demo_11", "selected_destination": "Sipinsur Valley", "last_intent": "recommendation", "conversation_history": ["healing spot", "ada kafe terdekat?"] },
-  { "user_id": "user_demo_12", "selected_destination": "Tepi Danau Toba", "last_intent": "booking", "conversation_history": ["penginapan tepi danau", "harga per malam?"] },
-  { "user_id": "user_demo_13", "selected_destination": "Pelabuhan Wisata", "last_intent": "transport", "conversation_history": ["transport ke pelabuhan", "jam kapal?"] },
-  { "user_id": "user_demo_14", "selected_destination": "Wisata Kuliner Pasar Lokal", "last_intent": "culinary", "conversation_history": ["kuliner lokal", "jajanan yang terkenal?"] },
-  { "user_id": "user_demo_15", "selected_destination": "Pusat Kerajinan UMKM", "last_intent": "shopping", "conversation_history": ["oleh-oleh", "kerajinan apa yang ada?"] },
-  { "user_id": "user_demo_16", "selected_destination": "Hutan Pendidikan", "last_intent": "recommendation", "conversation_history": ["wisata edukasi", "cocok untuk anak?"] },
-  { "user_id": "user_demo_17", "selected_destination": "Air Terjun Mini", "last_intent": "weather", "conversation_history": ["cuaca air terjun", "airnya deras gak?"] },
-  { "user_id": "user_demo_18", "selected_destination": "Spot Memancing Lokal", "last_intent": "recommendation", "conversation_history": ["tempat memancing", "perlu izin apa?"] },
-  { "user_id": "user_demo_19", "selected_destination": "Kawasan Agrowisata", "last_intent": "family", "conversation_history": ["wisata keluarga", "bisa panen buah?"] },
-  { "user_id": "user_demo_20", "selected_destination": "Jalan Setapak Panorama", "last_intent": "recommendation", "conversation_history": ["jalan santai", "view bagus jam berapa?"] },
-  { "user_id": "user_demo_21", "selected_destination": "Puncak Sunrise", "last_intent": "weather", "conversation_history": ["sunrise besok", "cuaca pagi"] },
-  { "user_id": "user_demo_22", "selected_destination": "Area Camping", "last_intent": "booking", "conversation_history": ["area camping", "bisa booking tenda?"] },
-  { "user_id": "user_demo_23", "selected_destination": "Rute Sepeda", "last_intent": "route", "conversation_history": ["rute sepeda", "berapa km?"] },
-  { "user_id": "user_demo_24", "selected_destination": "Wisata Edukasi", "last_intent": "education", "conversation_history": ["tour edukasi", "ada pemandu?"] },
-  { "user_id": "user_demo_25", "selected_destination": "Pusat Informasi Turis", "last_intent": "information", "conversation_history": ["info wisata", "peta area mana?"] },
-  { "user_id": "user_demo_26", "selected_destination": "Ritual Budaya", "last_intent": "culture", "conversation_history": ["acara budaya", "jam pertunjukan?"] },
-  { "user_id": "user_demo_27", "selected_destination": "Jalur Burung", "last_intent": "recommendation", "conversation_history": ["birdwatching", "burung apa yang sering muncul?"] },
-  { "user_id": "user_demo_28", "selected_destination": "Gua Lokal", "last_intent": "adventure", "conversation_history": ["wisata gua", "aman untuk pemula?"] },
-  { "user_id": "user_demo_29", "selected_destination": "Air Panas Alami", "last_intent": "relax", "conversation_history": ["air panas", "cocok sore hari?"] },
-  { "user_id": "user_demo_30", "selected_destination": "Panorama Bukit", "last_intent": "recommendation", "conversation_history": ["view bukit", "foto terbaik di mana?"] },
-  { "user_id": "user_demo_31", "selected_destination": "Pasar Malam", "last_intent": "culinary", "conversation_history": ["makan malam", "ada jajanan apa?"] },
-  { "user_id": "user_demo_32", "selected_destination": "Sentra Oleh-Oleh", "last_intent": "shopping", "conversation_history": ["souvenir", "oleh-oleh khas apa?"] },
-  { "user_id": "user_demo_33", "selected_destination": "Kafe Pinggir Danau", "last_intent": "recommendation", "conversation_history": ["cafe view danau", "yang romantis ada?"] },
-  { "user_id": "user_demo_34", "selected_destination": "Observatorium Mini", "last_intent": "night", "conversation_history": ["stargazing", "jam terbaik malam?"] },
-  { "user_id": "user_demo_35", "selected_destination": "Kawasan Olahraga", "last_intent": "family", "conversation_history": ["tempat olahraga", "ada area anak?"] },
-  { "user_id": "user_demo_36", "selected_destination": "Galeria Seni Lokal", "last_intent": "art", "conversation_history": ["galeri seni", "ada workshop?"] },
-  { "user_id": "user_demo_37", "selected_destination": "Kebun Buah", "last_intent": "agro", "conversation_history": ["kebun buah", "musim panen kapan?"] },
-  { "user_id": "user_demo_38", "selected_destination": "Rimba Edukasi", "last_intent": "education", "conversation_history": ["hutan edukasi", "program sekolah ada?"] },
-  { "user_id": "user_demo_39", "selected_destination": "Rute Panjat Tebing", "last_intent": "adventure", "conversation_history": ["climbing", "butuh guide?"] },
-  { "user_id": "user_demo_40", "selected_destination": "Perkebunan Kopi", "last_intent": "culinary", "conversation_history": ["wisata kopi", "bisa tasting?"] },
-  { "user_id": "user_demo_41", "selected_destination": "Pusat Selam Danau", "last_intent": "sport", "conversation_history": ["diving", "level pemula?"] },
-  { "user_id": "user_demo_42", "selected_destination": "Kamp Kuliner", "last_intent": "culinary", "conversation_history": ["food camp", "menu malam?"] },
-  { "user_id": "user_demo_43", "selected_destination": "Lembah Tenang", "last_intent": "wellness", "conversation_history": ["retreat", "ada yoga?"] },
-  { "user_id": "user_demo_44", "selected_destination": "Danau Kecil", "last_intent": "recommendation", "conversation_history": ["danau kecil", "bisa naik perahu?"] },
-  { "user_id": "user_demo_45", "selected_destination": "Bukit Panorama 2", "last_intent": "route", "conversation_history": ["rute ke bukit", "berapa lama?"] },
-  { "user_id": "user_demo_46", "selected_destination": "Wisata Edukasi 2", "last_intent": "education", "conversation_history": ["edukasi alam", "cocok untuk anak kecil?"] },
-  { "user_id": "user_demo_47", "selected_destination": "Taman Bunga", "last_intent": "recommendation", "conversation_history": ["taman bunga", "foto bagus jam berapa?"] },
-  { "user_id": "user_demo_48", "selected_destination": "Rute Kuliner", "last_intent": "culinary", "conversation_history": ["tour kuliner", "mulai dari mana?"] },
-  { "user_id": "user_demo_49", "selected_destination": "Area Pertunjukan", "last_intent": "culture", "conversation_history": ["pertunjukan budaya", "jadwalnya kapan?"] },
-  { "user_id": "user_demo_50", "selected_destination": "Panorama Terakhir", "last_intent": "recommendation", "conversation_history": ["spot terakhir", "ada tempat duduk?"] }
+  {
+    "user_id": "user_ulmfea42",
+    "selected_destination": null,
+    "last_intent": "recommendation",
+    "conversation_history": [
+      "hhu",
+      "hi"
+    ]
+  },
+  {
+    "user_id": "user_demo_1",
+    "selected_destination": "Pantai Parbaba",
+    "last_intent": "booking",
+    "conversation_history": [
+      "carikan hotel",
+      "berapa harga hotel terdekat?"
+    ]
+  },
+  {
+    "user_id": "user_demo_2",
+    "selected_destination": "Bukit Holbung",
+    "last_intent": "recommendation",
+    "conversation_history": [
+      "rekomendasi tempat foto",
+      "apa aktivitas di sana?"
+    ]
+  },
+  {
+    "user_id": "user_demo_3",
+    "selected_destination": null,
+    "last_intent": "weather",
+    "conversation_history": [
+      "cuaca di Pantai Parbaba hari ini"
+    ]
+  },
+  {
+    "user_id": "user_8ru7zfbr",
+    "selected_destination": null,
+    "last_intent": "recommendation",
+    "conversation_history": [
+      "hi"
+    ]
+  },
+  {
+    "user_id": "user_demo_4",
+    "selected_destination": "Desa Tomok",
+    "last_intent": "history",
+    "conversation_history": [
+      "tempat bersejarah",
+      "ada atraksi budaya?"
+    ]
+  },
+  {
+    "user_id": "user_demo_5",
+    "selected_destination": "Bukit Sibea Bea",
+    "last_intent": "route",
+    "conversation_history": [
+      "rute ke bukit",
+      "berapa lama perjalanannya?"
+    ]
+  },
+  {
+    "user_id": "user_demo_6",
+    "selected_destination": "Pantai Tongging",
+    "last_intent": "booking",
+    "conversation_history": [
+      "hotel dekat pantai",
+      "yang murah ada?"
+    ]
+  },
+  {
+    "user_id": "user_demo_7",
+    "selected_destination": "Kampung Seni",
+    "last_intent": "culinary",
+    "conversation_history": [
+      "makan khas di sekitar sini",
+      "rekomendasi kuliner"
+    ]
+  },
+  {
+    "user_id": "user_demo_8",
+    "selected_destination": "Situs Batu Passe",
+    "last_intent": "recommendation",
+    "conversation_history": [
+      "wisata sejarah",
+      "spot foto dekat sana"
+    ]
+  },
+  {
+    "user_id": "user_demo_9",
+    "selected_destination": "Bukit Pakkodian",
+    "last_intent": "weather",
+    "conversation_history": [
+      "cuaca di bukit ini",
+      "aman buat datang sore?"
+    ]
+  },
+  {
+    "user_id": "user_demo_10",
+    "selected_destination": "Sidihoni Lookout",
+    "last_intent": "route",
+    "conversation_history": [
+      "rute dari medan",
+      "jarak ke lookout"
+    ]
+  },
+  {
+    "user_id": "user_demo_11",
+    "selected_destination": "Sipinsur Valley",
+    "last_intent": "recommendation",
+    "conversation_history": [
+      "healing spot",
+      "ada kafe terdekat?"
+    ]
+  },
+  {
+    "user_id": "user_demo_12",
+    "selected_destination": "Tepi Danau Toba",
+    "last_intent": "booking",
+    "conversation_history": [
+      "penginapan tepi danau",
+      "harga per malam?"
+    ]
+  },
+  {
+    "user_id": "user_demo_13",
+    "selected_destination": "Pelabuhan Wisata",
+    "last_intent": "transport",
+    "conversation_history": [
+      "transport ke pelabuhan",
+      "jam kapal?"
+    ]
+  },
+  {
+    "user_id": "user_demo_14",
+    "selected_destination": "Wisata Kuliner Pasar Lokal",
+    "last_intent": "culinary",
+    "conversation_history": [
+      "kuliner lokal",
+      "jajanan yang terkenal?"
+    ]
+  },
+  {
+    "user_id": "user_demo_15",
+    "selected_destination": "Pusat Kerajinan UMKM",
+    "last_intent": "shopping",
+    "conversation_history": [
+      "oleh-oleh",
+      "kerajinan apa yang ada?"
+    ]
+  },
+  {
+    "user_id": "user_demo_16",
+    "selected_destination": "Hutan Pendidikan",
+    "last_intent": "recommendation",
+    "conversation_history": [
+      "wisata edukasi",
+      "cocok untuk anak?"
+    ]
+  },
+  {
+    "user_id": "user_demo_17",
+    "selected_destination": "Air Terjun Mini",
+    "last_intent": "weather",
+    "conversation_history": [
+      "cuaca air terjun",
+      "airnya deras gak?"
+    ]
+  },
+  {
+    "user_id": "user_demo_18",
+    "selected_destination": "Spot Memancing Lokal",
+    "last_intent": "recommendation",
+    "conversation_history": [
+      "tempat memancing",
+      "perlu izin apa?"
+    ]
+  },
+  {
+    "user_id": "user_demo_19",
+    "selected_destination": "Kawasan Agrowisata",
+    "last_intent": "family",
+    "conversation_history": [
+      "wisata keluarga",
+      "bisa panen buah?"
+    ]
+  },
+  {
+    "user_id": "user_demo_20",
+    "selected_destination": "Jalan Setapak Panorama",
+    "last_intent": "recommendation",
+    "conversation_history": [
+      "jalan santai",
+      "view bagus jam berapa?"
+    ]
+  },
+  {
+    "user_id": "user_demo_21",
+    "selected_destination": "Puncak Sunrise",
+    "last_intent": "weather",
+    "conversation_history": [
+      "sunrise besok",
+      "cuaca pagi"
+    ]
+  },
+  {
+    "user_id": "user_demo_22",
+    "selected_destination": "Area Camping",
+    "last_intent": "booking",
+    "conversation_history": [
+      "area camping",
+      "bisa booking tenda?"
+    ]
+  },
+  {
+    "user_id": "user_demo_23",
+    "selected_destination": "Rute Sepeda",
+    "last_intent": "route",
+    "conversation_history": [
+      "rute sepeda",
+      "berapa km?"
+    ]
+  },
+  {
+    "user_id": "user_demo_24",
+    "selected_destination": "Wisata Edukasi",
+    "last_intent": "education",
+    "conversation_history": [
+      "tour edukasi",
+      "ada pemandu?"
+    ]
+  },
+  {
+    "user_id": "user_demo_25",
+    "selected_destination": "Pusat Informasi Turis",
+    "last_intent": "information",
+    "conversation_history": [
+      "info wisata",
+      "peta area mana?"
+    ]
+  },
+  {
+    "user_id": "user_demo_26",
+    "selected_destination": "Ritual Budaya",
+    "last_intent": "culture",
+    "conversation_history": [
+      "acara budaya",
+      "jam pertunjukan?"
+    ]
+  },
+  {
+    "user_id": "user_demo_27",
+    "selected_destination": "Jalur Burung",
+    "last_intent": "recommendation",
+    "conversation_history": [
+      "birdwatching",
+      "burung apa yang sering muncul?"
+    ]
+  },
+  {
+    "user_id": "user_demo_28",
+    "selected_destination": "Gua Lokal",
+    "last_intent": "adventure",
+    "conversation_history": [
+      "wisata gua",
+      "aman untuk pemula?"
+    ]
+  },
+  {
+    "user_id": "user_demo_29",
+    "selected_destination": "Air Panas Alami",
+    "last_intent": "relax",
+    "conversation_history": [
+      "air panas",
+      "cocok sore hari?"
+    ]
+  },
+  {
+    "user_id": "user_demo_30",
+    "selected_destination": "Panorama Bukit",
+    "last_intent": "recommendation",
+    "conversation_history": [
+      "view bukit",
+      "foto terbaik di mana?"
+    ]
+  },
+  {
+    "user_id": "user_demo_31",
+    "selected_destination": "Pasar Malam",
+    "last_intent": "culinary",
+    "conversation_history": [
+      "makan malam",
+      "ada jajanan apa?"
+    ]
+  },
+  {
+    "user_id": "user_demo_32",
+    "selected_destination": "Sentra Oleh-Oleh",
+    "last_intent": "shopping",
+    "conversation_history": [
+      "souvenir",
+      "oleh-oleh khas apa?"
+    ]
+  },
+  {
+    "user_id": "user_demo_33",
+    "selected_destination": "Kafe Pinggir Danau",
+    "last_intent": "recommendation",
+    "conversation_history": [
+      "cafe view danau",
+      "yang romantis ada?"
+    ]
+  },
+  {
+    "user_id": "user_demo_34",
+    "selected_destination": "Observatorium Mini",
+    "last_intent": "night",
+    "conversation_history": [
+      "stargazing",
+      "jam terbaik malam?"
+    ]
+  },
+  {
+    "user_id": "user_demo_35",
+    "selected_destination": "Kawasan Olahraga",
+    "last_intent": "family",
+    "conversation_history": [
+      "tempat olahraga",
+      "ada area anak?"
+    ]
+  },
+  {
+    "user_id": "user_demo_36",
+    "selected_destination": "Galeria Seni Lokal",
+    "last_intent": "art",
+    "conversation_history": [
+      "galeri seni",
+      "ada workshop?"
+    ]
+  },
+  {
+    "user_id": "user_demo_37",
+    "selected_destination": "Kebun Buah",
+    "last_intent": "agro",
+    "conversation_history": [
+      "kebun buah",
+      "musim panen kapan?"
+    ]
+  },
+  {
+    "user_id": "user_demo_38",
+    "selected_destination": "Rimba Edukasi",
+    "last_intent": "education",
+    "conversation_history": [
+      "hutan edukasi",
+      "program sekolah ada?"
+    ]
+  },
+  {
+    "user_id": "user_demo_39",
+    "selected_destination": "Rute Panjat Tebing",
+    "last_intent": "adventure",
+    "conversation_history": [
+      "climbing",
+      "butuh guide?"
+    ]
+  },
+  {
+    "user_id": "user_demo_40",
+    "selected_destination": "Perkebunan Kopi",
+    "last_intent": "culinary",
+    "conversation_history": [
+      "wisata kopi",
+      "bisa tasting?"
+    ]
+  },
+  {
+    "user_id": "user_demo_41",
+    "selected_destination": "Pusat Selam Danau",
+    "last_intent": "sport",
+    "conversation_history": [
+      "diving",
+      "level pemula?"
+    ]
+  },
+  {
+    "user_id": "user_demo_42",
+    "selected_destination": "Kamp Kuliner",
+    "last_intent": "culinary",
+    "conversation_history": [
+      "food camp",
+      "menu malam?"
+    ]
+  },
+  {
+    "user_id": "user_demo_43",
+    "selected_destination": "Lembah Tenang",
+    "last_intent": "wellness",
+    "conversation_history": [
+      "retreat",
+      "ada yoga?"
+    ]
+  },
+  {
+    "user_id": "user_demo_44",
+    "selected_destination": "Danau Kecil",
+    "last_intent": "recommendation",
+    "conversation_history": [
+      "danau kecil",
+      "bisa naik perahu?"
+    ]
+  },
+  {
+    "user_id": "user_demo_45",
+    "selected_destination": "Bukit Panorama 2",
+    "last_intent": "route",
+    "conversation_history": [
+      "rute ke bukit",
+      "berapa lama?"
+    ]
+  },
+  {
+    "user_id": "user_demo_46",
+    "selected_destination": "Wisata Edukasi 2",
+    "last_intent": "education",
+    "conversation_history": [
+      "edukasi alam",
+      "cocok untuk anak kecil?"
+    ]
+  },
+  {
+    "user_id": "user_demo_47",
+    "selected_destination": "Taman Bunga",
+    "last_intent": "recommendation",
+    "conversation_history": [
+      "taman bunga",
+      "foto bagus jam berapa?"
+    ]
+  },
+  {
+    "user_id": "user_demo_48",
+    "selected_destination": "Rute Kuliner",
+    "last_intent": "culinary",
+    "conversation_history": [
+      "tour kuliner",
+      "mulai dari mana?"
+    ]
+  },
+  {
+    "user_id": "user_demo_49",
+    "selected_destination": "Area Pertunjukan",
+    "last_intent": "culture",
+    "conversation_history": [
+      "pertunjukan budaya",
+      "jadwalnya kapan?"
+    ]
+  },
+  {
+    "user_id": "user_demo_50",
+    "selected_destination": "Panorama Terakhir",
+    "last_intent": "recommendation",
+    "conversation_history": [
+      "spot terakhir",
+      "ada tempat duduk?"
+    ]
+  },
+  {
+    "user_id": "test_user",
+    "selected_destination": {
+      "id": 1,
+      "name": "Bukit Holbung",
+      "type": null,
+      "area": "Samosir"
+    },
+    "last_intent": "recommendation",
+    "conversation_history": [
+      "aku mau liburan healing",
+      "aku mau liburan healing",
+      "bagaimana cara ke Bukit Holbung",
+      "makan apa yang enak di sini",
+      "hotel apa yang bagus",
+      "berapa suhu sekarang",
+      "aku mau liburan healing",
+      "aku mau liburan healing"
+    ]
+  }
 ]
