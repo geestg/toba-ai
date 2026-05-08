@@ -1,0 +1,46 @@
+[
+  {
+    "destination": "Bukit Holbung",
+    "name": "Mie Gomak",
+    "description": "Mie khas Batak dengan kuah rempah.",
+    "price": "25K",
+    "rating": 4.7,
+    "image": "/images/foods/mie-gomak.jpg"
+  },
+
+  {
+    "destination": "Bukit Holbung",
+    "name": "Saksang",
+    "description": "Kuliner khas Batak berbumbu andaliman.",
+    "price": "45K",
+    "rating": 4.8,
+    "image": "/images/foods/saksang.jpg"
+  },
+
+  {
+    "destination": "Pantai Parbaba",
+    "name": "Ikan Arsik",
+    "description": "Ikan mas khas Batak.",
+    "price": "40K",
+    "rating": 4.9,
+    "image": "/images/foods/arsik.jpg"
+  },
+
+  {
+    "destination": "Desa Tomok",
+    "name": "Naniura",
+    "description": "Ikan mentah khas Batak dengan bumbu tradisional.",
+    "price": "55K",
+    "rating": 4.8,
+    "image": "/images/foods/naniura.jpg"
+  },
+
+  {
+    "destination": "Bukit Sibea Bea",
+    "name": "Babi Panggang Karo",
+    "description": "Kuliner khas Karo populer di Sumatera Utara.",
+    "price": "65K",
+    "rating": 4.9,
+    "image": "/images/foods/bpk.jpg"
+  }
+]

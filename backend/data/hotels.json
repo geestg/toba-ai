@@ -1,0 +1,45 @@
+[
+  {
+    "destination": "Bukit Holbung",
+    "name": "Holbung View Resort",
+    "type": "Resort",
+    "location": "Samosir",
+    "price": "450K / malam",
+    "rating": 4.6,
+    "description": "Resort dengan panorama Danau Toba.",
+    "image": "/images/hotels/hotel-1.jpg"
+  },
+
+  {
+    "destination": "Pantai Parbaba",
+    "name": "Parbaba Lake Hotel",
+    "type": "Hotel",
+    "location": "Samosir",
+    "price": "380K / malam",
+    "rating": 4.5,
+    "description": "Hotel dekat area pantai wisata.",
+    "image": "/images/hotels/hotel-2.jpg"
+  },
+
+  {
+    "destination": "Air Terjun Sipiso Piso",
+    "name": "Sipiso Piso Cottage",
+    "type": "Cottage",
+    "location": "Karo",
+    "price": "520K / malam",
+    "rating": 4.7,
+    "description": "Penginapan dengan udara pegunungan.",
+    "image": "/images/hotels/hotel-3.jpg"
+  },
+
+  {
+    "destination": "Desa Tomok",
+    "name": "Tomok Heritage Hotel",
+    "type": "Hotel",
+    "location": "Samosir",
+    "price": "410K / malam",
+    "rating": 4.4,
+    "description": "Hotel bernuansa budaya Batak.",
+    "image": "/images/hotels/hotel-4.jpg"
+  }
+]

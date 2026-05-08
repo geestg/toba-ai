@@ -1,87 +1,197 @@
 import json
-import os
-from datetime import datetime
+from pathlib import Path
 
-MEMORY_FILE = "data/memory.json"
 
+# =========================================
+# FILE SETUP
+# =========================================
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+MEMORY_FILE = BASE_DIR / "data" / "users.json"
+
+
+# =========================================
+# LOAD MEMORY
+# =========================================
 
 def load_memory():
-    if not os.path.exists(MEMORY_FILE):
-        return {}
 
-    try:
-        with open(MEMORY_FILE, "r") as f:
-            data = json.load(f)
+    if not MEMORY_FILE.exists():
 
-            # VALIDASI
-            if isinstance(data, dict):
-                return data
-            else:
-                return {}  # kalau rusak, reset
+        with open(MEMORY_FILE, "w") as f:
+            json.dump([], f)
 
-    except:
-        return {}
+    with open(MEMORY_FILE, "r", encoding="utf-8") as f:
+        return json.load(f)
 
 
-def save_memory(memory):
-    os.makedirs("data", exist_ok=True)
-    with open(MEMORY_FILE, "w") as f:
-        json.dump(memory, f, indent=2)
+# =========================================
+# SAVE MEMORY
+# =========================================
+
+def save_memory(data):
+
+    with open(MEMORY_FILE, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2)
 
 
-def update_memory(user_id, message, location=None, selected_destination=None):
-    memory = load_memory()
+# =========================================
+# FIND USER
+# =========================================
 
-    # INIT USER
-    if user_id not in memory:
-        memory[user_id] = {
-            "history": [],
-            "preferences": {},
-            "selected_destinations": []
-        }
+def find_user(memory, user_id):
 
-    # SAFE GUARD
-    if not isinstance(memory[user_id], dict):
-        memory[user_id] = {
-            "history": [],
-            "preferences": {},
-            "selected_destinations": []
-        }
+    for user in memory:
 
-    memory[user_id]["history"].append(message)
+        if user["user_id"] == user_id:
+            return user
 
-    if location:
-        memory[user_id]["preferences"]["last_location"] = location
-
-    # Save selected destination for follow-up
-    if selected_destination and isinstance(selected_destination, dict):
-        memory[user_id]["preferences"]["selected_destination"] = selected_destination
-        # Also append to history of selected destinations
-        if "selected_destinations" not in memory[user_id]:
-            memory[user_id]["selected_destinations"] = []
-        memory[user_id]["selected_destinations"].append({
-            "name": selected_destination.get("name"),
-            "timestamp": str(datetime.now()) if 'datetime' in globals() else "now"
-        })
-
-    save_memory(memory)
-
-    return memory[user_id]
-
-
-def get_selected_destination(user_id):
-    """Get the currently selected destination for a user."""
-    memory = load_memory()
-    user_mem = memory.get(user_id, {})
-    if isinstance(user_mem, dict):
-        return user_mem.get("preferences", {}).get("selected_destination")
     return None
 
 
-def clear_selected_destination(user_id):
-    """Clear the selected destination for a user."""
-    memory = load_memory()
-    if user_id in memory and isinstance(memory[user_id], dict):
-        memory[user_id].get("preferences", {}).pop("selected_destination", None)
-        save_memory(memory)
+# =========================================
+# CREATE USER
+# =========================================
 
+def create_user(user_id):
+
+    memory = load_memory()
+
+    new_user = {
+        "user_id": user_id,
+
+        "selected_destination": None,
+
+        "last_intent": None,
+
+        "conversation_history": []
+    }
+
+    memory.append(new_user)
+
+    save_memory(memory)
+
+    return new_user
+
+
+# =========================================
+# GET USER MEMORY
+# =========================================
+
+def get_user_memory(user_id):
+
+    memory = load_memory()
+
+    user = find_user(memory, user_id)
+
+    if not user:
+        user = create_user(user_id)
+
+    return user
+
+
+# =========================================
+# UPDATE MEMORY
+# =========================================
+
+def update_memory(
+    user_id,
+    message=None,
+    intent=None,
+    selected_destination=None
+):
+
+    memory = load_memory()
+
+    user = find_user(memory, user_id)
+
+    if not user:
+
+        user = {
+            "user_id": user_id,
+
+            "selected_destination": None,
+
+            "last_intent": None,
+
+            "conversation_history": []
+        }
+
+        memory.append(user)
+
+    # =====================================
+    # UPDATE DESTINATION
+    # =====================================
+
+    if selected_destination:
+
+        user["selected_destination"] = {
+            "id": selected_destination.get("id"),
+            "name": selected_destination.get("name"),
+            "type": selected_destination.get("type"),
+            "area": selected_destination.get("area")
+        }
+
+    # =====================================
+    # UPDATE INTENT
+    # =====================================
+
+    if intent:
+        user["last_intent"] = intent
+
+    # =====================================
+    # SAVE CHAT HISTORY
+    # =====================================
+
+    if message:
+
+        user["conversation_history"].append(message)
+
+        # LIMIT HISTORY
+        user["conversation_history"] = (
+            user["conversation_history"][-10:]
+        )
+
+    save_memory(memory)
+
+    return user
+
+
+# =========================================
+# GET SELECTED DESTINATION
+# =========================================
+
+def get_selected_destination(user_id):
+
+    user = get_user_memory(user_id)
+
+    return user.get("selected_destination")
+
+
+# =========================================
+# GET LAST INTENT
+# =========================================
+
+def get_last_intent(user_id):
+
+    user = get_user_memory(user_id)
+
+    return user.get("last_intent")
+
+
+# =========================================
+# CLEAR MEMORY
+# =========================================
+
+def clear_memory(user_id):
+
+    memory = load_memory()
+
+    filtered = []
+
+    for user in memory:
+
+        if user["user_id"] != user_id:
+            filtered.append(user)
+
+    save_memory(filtered)
