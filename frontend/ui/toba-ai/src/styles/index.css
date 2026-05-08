@@ -1,0 +1,32 @@
+/* =========================================
+   BASE
+========================================= */
+
+@import "./base/reset.css";
+@import "./base/globals.css";
+@import "./base/typography.css";
+
+/* =========================================
+   LAYOUT
+========================================= */
+
+@import "./layout/app-shell.css";
+@import "./layout/sidebar.css";
+@import "./layout/topbar.css";
+@import "./layout/hero.css";
+@import "./layout/responsive.css";
+
+/* =========================================
+   COMPONENTS
+========================================= */
+
+@import "./components/chatbox.css";
+@import "./components/map.css";
+@import "./components/culinary-card.css";
+@import "./components/recommendation-card.css";
+
+/* =========================================
+   PAGES
+========================================= */
+
+@import "./pages/home.css";

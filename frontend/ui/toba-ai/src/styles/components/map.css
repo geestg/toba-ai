@@ -1,0 +1,301 @@
+/* =========================================
+   CHAT MAP WRAPPER
+========================================= */
+
+.chat-map {
+  overflow: hidden;
+
+  margin-top: 10px;
+
+  border-radius: 16px;
+
+  border:
+    1px solid
+    #d7e3ec;
+
+  background: white;
+
+  box-shadow:
+    0 10px 22px
+    rgba(20, 40, 60, 0.06);
+}
+
+/* =========================================
+   MAP HEADER
+========================================= */
+
+.chat-map::before {
+  content: "AI Route Intelligence";
+
+  display: flex;
+  align-items: center;
+
+  height: 42px;
+
+  padding:
+    0
+    14px;
+
+  background: #f8fbfe;
+
+  border-bottom:
+    1px solid
+    #e2e8f0;
+
+  color: #637584;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  letter-spacing: 0.2px;
+}
+
+/* =========================================
+   LEAFLET CONTAINER
+========================================= */
+
+.chat-map .leaflet-container {
+  width: 100%;
+
+  height: 240px !important;
+
+  z-index: 1;
+}
+
+/* =========================================
+   MAP FOOTER
+========================================= */
+
+.map-footer {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+
+  padding:
+    12px
+    14px;
+
+  background: #fcfeff;
+
+  border-top:
+    1px solid
+    #edf2f7;
+}
+
+/* =========================================
+   MAP INFO
+========================================= */
+
+.map-info {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.map-title {
+  font-size: 13px;
+  font-weight: 700;
+
+  color: #22354a;
+}
+
+.map-subtitle {
+  font-size: 11px;
+
+  color: #6f8092;
+}
+
+/* =========================================
+   MAP STATUS
+========================================= */
+
+.map-status {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  padding:
+    6px
+    10px;
+
+  border-radius: 999px;
+
+  background: #e8fbf1;
+
+  color: #1f8b5f;
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.map-status.warning {
+  background: #fff4e7;
+  color: #d4881c;
+}
+
+.map-status.danger {
+  background: #ffe9e9;
+  color: #d44f4f;
+}
+
+/* =========================================
+   MAP LEGEND
+========================================= */
+
+.map-legend {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  padding:
+    10px
+    14px;
+
+  border-top:
+    1px solid
+    #edf2f7;
+
+  background: #ffffff;
+}
+
+.map-legend-item {
+  display: flex;
+  align-items: center;
+
+  gap: 6px;
+
+  font-size: 11px;
+
+  color: #607084;
+}
+
+.map-dot {
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+}
+
+.map-dot.green {
+  background: #2fb3bd;
+}
+
+.map-dot.orange {
+  background: #f29b39;
+}
+
+.map-dot.red {
+  background: #e45858;
+}
+
+/* =========================================
+   AI OVERLAY BADGE
+========================================= */
+
+.map-ai-overlay {
+  position: absolute;
+
+  top: 56px;
+  right: 14px;
+
+  z-index: 999;
+
+  padding:
+    8px
+    12px;
+
+  border-radius: 12px;
+
+  backdrop-filter: blur(10px);
+
+  background:
+    rgba(255,255,255,0.82);
+
+  border:
+    1px solid
+    rgba(255,255,255,0.4);
+
+  box-shadow:
+    0 8px 18px
+    rgba(15, 49, 73, 0.08);
+
+  font-size: 11px;
+
+  color: #3d556d;
+
+  line-height: 1.5;
+}
+
+/* =========================================
+   NIGHT MODE
+========================================= */
+
+body[data-theme="malam"] .chat-map {
+  background: var(--bg-card);
+
+  border-color: var(--line-soft);
+}
+
+body[data-theme="malam"] .chat-map::before {
+  background: #1a2e4a;
+
+  border-color: var(--line-soft);
+
+  color: var(--text-main);
+}
+
+body[data-theme="malam"] .map-footer,
+body[data-theme="malam"] .map-legend {
+  background: #16243d;
+
+  border-color: var(--line-soft);
+}
+
+body[data-theme="malam"] .map-title {
+  color: var(--text-main);
+}
+
+body[data-theme="malam"] .map-subtitle,
+body[data-theme="malam"] .map-legend-item {
+  color: var(--text-muted);
+}
+
+body[data-theme="malam"] .map-ai-overlay {
+  background:
+    rgba(22, 36, 61, 0.82);
+
+  border-color:
+    rgba(157,176,204,0.16);
+
+  color: var(--text-main);
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+  .chat-map .leaflet-container {
+    height: 220px !important;
+  }
+
+  .map-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .map-ai-overlay {
+    right: 10px;
+    left: 10px;
+
+    top: 54px;
+  }
+}

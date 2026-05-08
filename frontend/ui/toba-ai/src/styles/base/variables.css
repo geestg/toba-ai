@@ -1,0 +1,32 @@
+:root {
+
+  --bg-main:
+    #eef4fa;
+
+  --bg-card:
+    rgba(255,255,255,0.82);
+
+  --text-main:
+    #1d314c;
+
+  --text-soft:
+    #6f8092;
+
+  --accent:
+    #2fb3bd;
+
+  --accent-2:
+    #53d5cc;
+
+  --line:
+    rgba(210,220,232,0.7);
+
+  --shadow:
+    0 10px 30px rgba(15,35,55,0.08);
+
+  --radius:
+    22px;
+
+  --blur:
+    blur(18px);
+}

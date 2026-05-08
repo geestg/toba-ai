@@ -1,0 +1,51 @@
+/* =========================================
+   GLOBAL APP STYLES
+========================================= */
+
+body {
+  background: var(--bg-main);
+  color: var(--text-strong);
+  overflow-x: hidden;
+}
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+:focus-visible {
+  outline: 2px solid var(--brand-primary);
+  outline-offset: 2px;
+  border-radius: 8px;
+}
+
+/* =========================================
+   SMOOTH TRANSITIONS
+========================================= */
+
+body,
+button,
+input,
+textarea,
+select,
+a {
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* =========================================
+   UTILITY CONTAINERS
+========================================= */
+
+.page-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.section-spacing {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}

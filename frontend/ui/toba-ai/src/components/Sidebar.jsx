@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import Logo from "./Logo";
 
 export default function Sidebar({ isOpen, onToggle, themeMode, onToggleTheme, gpsActive, location, onToggleGPS }) {
   const [locating, setLocating] = useState(false);
@@ -41,7 +40,6 @@ export default function Sidebar({ isOpen, onToggle, themeMode, onToggleTheme, gp
     <aside className={`sidebar-fixed ${isOpen ? "is-open" : "is-closed"}`}>
       <div className="sidebar-brand" onClick={!isOpen ? onToggle : undefined} role={!isOpen ? "button" : undefined} tabIndex={!isOpen ? 0 : -1} aria-label={!isOpen ? "Buka sidebar" : undefined}>
         <div className="brand-mark-svg">
-          <Logo size={38} />
         </div>
         {isOpen && (
           <div className="brand-text">

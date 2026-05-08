@@ -1,0 +1,26 @@
+{
+  "Bukit Holbung": {
+    "condition": "Cerah",
+    "temperature": 24
+  },
+
+  "Pantai Parbaba": {
+    "condition": "Berawan",
+    "temperature": 27
+  },
+
+  "Air Terjun Sipiso Piso": {
+    "condition": "Berkabut",
+    "temperature": 20
+  },
+
+  "Desa Tomok": {
+    "condition": "Cerah",
+    "temperature": 26
+  },
+
+  "Bukit Sibea Bea": {
+    "condition": "Cerah",
+    "temperature": 23
+  }
+}

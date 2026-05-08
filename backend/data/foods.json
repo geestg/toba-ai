@@ -1,0 +1,21 @@
+{
+  "Bukit Holbung": [
+    {
+      "name": "Mie Gomak",
+      "description": "Mie khas Batak dengan kuah rempah.",
+      "price": "25K",
+      "rating": 4.7,
+      "image": "/images/foods/mie-gomak.jpg"
+    }
+  ],
+
+  "Pantai Parbaba": [
+    {
+      "name": "Ikan Arsik",
+      "description": "Ikan mas bumbu andaliman khas Batak.",
+      "price": "45K",
+      "rating": 4.8,
+      "image": "/images/foods/arsik.jpg"
+    }
+  ]
+}

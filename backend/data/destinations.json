@@ -1,0 +1,71 @@
+[
+  {
+    "id": 1,
+    "name": "Bukit Holbung",
+    "area": "Samosir",
+    "description": "Bukit hijau dengan panorama Danau Toba yang luas dan cocok untuk healing.",
+    "weather": "clear",
+    "crowd": "low",
+    "distance": 12,
+    "rating": 4.8,
+    "score": 95,
+    "tags": ["nature", "healing", "camping"],
+    "image": "/images/destinations/holbung.jpg"
+  },
+
+  {
+    "id": 2,
+    "name": "Pantai Parbaba",
+    "area": "Samosir",
+    "description": "Pantai pasir putih populer untuk wisata keluarga.",
+    "weather": "cloudy",
+    "crowd": "medium",
+    "distance": 8,
+    "rating": 4.6,
+    "score": 90,
+    "tags": ["pantai", "keluarga"],
+    "image": "/images/destinations/parbaba.jpg"
+  },
+
+  {
+    "id": 3,
+    "name": "Air Terjun Sipiso Piso",
+    "area": "Karo",
+    "description": "Air terjun tertinggi di sekitar Danau Toba dengan view spektakuler.",
+    "weather": "foggy",
+    "crowd": "high",
+    "distance": 34,
+    "rating": 4.9,
+    "score": 97,
+    "tags": ["nature", "photography"],
+    "image": "/images/destinations/sipiso-piso.jpg"
+  },
+
+  {
+    "id": 4,
+    "name": "Desa Tomok",
+    "area": "Samosir",
+    "description": "Desa budaya Batak dengan sejarah dan pertunjukan tradisional.",
+    "weather": "clear",
+    "crowd": "medium",
+    "distance": 10,
+    "rating": 4.5,
+    "score": 87,
+    "tags": ["culture", "history"],
+    "image": "/images/destinations/tomok.jpg"
+  },
+
+  {
+    "id": 5,
+    "name": "Bukit Sibea Bea",
+    "area": "Samosir",
+    "description": "Bukit ikonik dengan patung Yesus dan jalur berkelok indah.",
+    "weather": "clear",
+    "crowd": "low",
+    "distance": 18,
+    "rating": 4.7,
+    "score": 92,
+    "tags": ["nature", "religious"],
+    "image": "/images/destinations/sibea-bea.jpg"
+  }
+]

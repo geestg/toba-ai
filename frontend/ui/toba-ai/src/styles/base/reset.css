@@ -1,0 +1,29 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html,
+body,
+#root{
+  min-height:100%;
+}
+
+body{
+  background:
+    linear-gradient(
+      180deg,
+      #f8fbff 0%,
+      #eef4fa 100%
+    );
+
+  font-family:
+    "Plus Jakarta Sans",
+    sans-serif;
+
+  color:
+    var(--text-main);
+
+  overflow-x:hidden;
+}

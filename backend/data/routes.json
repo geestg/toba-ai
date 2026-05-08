@@ -1,0 +1,41 @@
+[
+  {
+    "from": "Medan",
+    "to": "Bukit Holbung",
+    "distance_km": 120,
+    "duration_hours": 4,
+    "traffic": "medium"
+  },
+
+  {
+    "from": "Medan",
+    "to": "Pantai Parbaba",
+    "distance_km": 110,
+    "duration_hours": 3.5,
+    "traffic": "low"
+  },
+
+  {
+    "from": "Medan",
+    "to": "Air Terjun Sipiso Piso",
+    "distance_km": 95,
+    "duration_hours": 3,
+    "traffic": "high"
+  },
+
+  {
+    "from": "Medan",
+    "to": "Desa Tomok",
+    "distance_km": 118,
+    "duration_hours": 4,
+    "traffic": "medium"
+  },
+
+  {
+    "from": "Medan",
+    "to": "Bukit Sibea Bea",
+    "distance_km": 125,
+    "duration_hours": 4.5,
+    "traffic": "low"
+  }
+]
