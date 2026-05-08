@@ -25,8 +25,18 @@ async def chat(payload: dict):
     message = payload.get("message", "")
     lat = payload.get("lat")
     lng = payload.get("lng")
+    user_id = payload.get("user_id", "default_user")
+    selected_destination = payload.get("selected_destination")
+    mobile_data = payload.get("mobile_data")
 
-    result = await handle_chat(message, lat, lng)
+    result = await handle_chat(
+        message,
+        lat=lat,
+        lng=lng,
+        user_id=user_id,
+        selected_destination=selected_destination,
+        mobile_data=mobile_data
+    )
     return result
 
 
@@ -38,8 +48,18 @@ async def chat_stream(payload: dict):
         message = payload.get("message", "")
         lat = payload.get("lat")
         lng = payload.get("lng")
+        user_id = payload.get("user_id", "default_user")
+        selected_destination = payload.get("selected_destination")
+        mobile_data = payload.get("mobile_data")
 
-        result = await handle_chat(message, lat, lng)
+        result = await handle_chat(
+            message,
+            lat=lat,
+            lng=lng,
+            user_id=user_id,
+            selected_destination=selected_destination,
+            mobile_data=mobile_data
+        )
         text = result["reply"]
 
         # streaming per word + delay
@@ -48,3 +68,4 @@ async def chat_stream(payload: dict):
             await asyncio.sleep(0.03)  # biar keliatan "AI mikir"
 
     return StreamingResponse(generate(), media_type="text/plain")
+

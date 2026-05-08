@@ -1,0 +1,1528 @@
+{
+  "cached_at": "2026-04-28T11:41:47.992619",
+  "data": [
+    {
+      "name": "Museum Huta Bolon Simanindo",
+      "rating": 4.2,
+      "lat": 2.752375,
+      "lng": 98.744123,
+      "type": "cultural",
+      "area": "Karo",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.7,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "light_rain"
+      ],
+      "category_tags": [
+        "cultural"
+      ],
+      "image": "/images/placeholder-cultural.jpg",
+      "osm_id": 665497965,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Batak King Grave",
+      "rating": 4.1,
+      "lat": 2.651358,
+      "lng": 98.860585,
+      "type": "cultural",
+      "area": "Simalungun",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "light_rain"
+      ],
+      "category_tags": [
+        "cultural"
+      ],
+      "image": "/images/placeholder-cultural.jpg",
+      "osm_id": 806537113,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Patung Sigale Gale",
+      "rating": 4.1,
+      "lat": 2.651854,
+      "lng": 98.860899,
+      "type": "nature",
+      "area": "Simalungun",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.7,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 3119943107,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Stone Chairs of Ambarita",
+      "rating": 4.0,
+      "lat": 2.678824,
+      "lng": 98.836541,
+      "type": "cultural",
+      "area": "Simalungun",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "light_rain"
+      ],
+      "category_tags": [
+        "cultural"
+      ],
+      "image": "/images/placeholder-cultural.jpg",
+      "osm_id": 1370923862,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Bolon Simanindo",
+      "rating": 4.0,
+      "lat": 2.752302,
+      "lng": 98.744532,
+      "type": "cultural",
+      "area": "Karo",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "light_rain"
+      ],
+      "category_tags": [
+        "cultural"
+      ],
+      "image": "/images/placeholder-cultural.jpg",
+      "osm_id": 4833843122,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Huta Siallagan",
+      "rating": 4.0,
+      "lat": 2.678915,
+      "lng": 98.836473,
+      "type": "cultural",
+      "area": "Simalungun",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "light_rain"
+      ],
+      "category_tags": [
+        "cultural"
+      ],
+      "image": "/images/placeholder-cultural.jpg",
+      "osm_id": 4833854121,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Simanindo viewpoint",
+      "rating": 4.0,
+      "lat": 2.798298,
+      "lng": 98.788545,
+      "type": "nature",
+      "area": "Karo",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 5305208124,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "View on the lake",
+      "rating": 4.0,
+      "lat": 2.815976,
+      "lng": 98.778486,
+      "type": "viewpoint",
+      "area": "Karo",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "clear"
+      ],
+      "category_tags": [
+        "viewpoint"
+      ],
+      "image": "/images/placeholder-viewpoint.jpg",
+      "osm_id": 6705007385,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Patung Yesus, Bukit Sibea-bea",
+      "rating": 4.0,
+      "lat": 2.550458,
+      "lng": 98.671947,
+      "type": "religious",
+      "area": "Toba Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "light_rain"
+      ],
+      "category_tags": [
+        "religious"
+      ],
+      "image": "/images/placeholder-religious.jpg",
+      "osm_id": 8628429191,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Menara Tele",
+      "rating": 3.9,
+      "lat": 2.55205,
+      "lng": 98.639939,
+      "type": "viewpoint",
+      "area": "Toba Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "clear"
+      ],
+      "category_tags": [
+        "viewpoint"
+      ],
+      "image": "/images/placeholder-viewpoint.jpg",
+      "osm_id": 2647682955,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Pelabuhan Simanindo",
+      "rating": 3.9,
+      "lat": 2.75436,
+      "lng": 98.745893,
+      "type": "nature",
+      "area": "Karo",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 4012637421,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Huta Raja",
+      "rating": 3.9,
+      "lat": 2.663882,
+      "lng": 98.689099,
+      "type": "cultural",
+      "area": "Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "light_rain"
+      ],
+      "category_tags": [
+        "cultural"
+      ],
+      "image": "/images/placeholder-cultural.jpg",
+      "osm_id": 4012695775,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Batu Parhusipan Si Boru Pareme",
+      "rating": 3.9,
+      "lat": 2.588453,
+      "lng": 98.632707,
+      "type": "cultural",
+      "area": "Toba Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "light_rain"
+      ],
+      "category_tags": [
+        "cultural"
+      ],
+      "image": "/images/placeholder-cultural.jpg",
+      "osm_id": 4012826890,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Batu Hobon",
+      "rating": 3.9,
+      "lat": 2.590126,
+      "lng": 98.629086,
+      "type": "cultural",
+      "area": "Toba Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "light_rain"
+      ],
+      "category_tags": [
+        "cultural"
+      ],
+      "image": "/images/placeholder-cultural.jpg",
+      "osm_id": 4014232253,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Pulau Malau",
+      "rating": 3.9,
+      "lat": 2.758063,
+      "lng": 98.743681,
+      "type": "nature",
+      "area": "Karo",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 4035824226,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Beach",
+      "rating": 3.9,
+      "lat": 2.832213,
+      "lng": 98.527687,
+      "type": "beach",
+      "area": "Karo",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "beach"
+      ],
+      "image": "/images/placeholder-beach.jpg",
+      "osm_id": 5592852821,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Pulau Silalahi Paropo",
+      "rating": 3.9,
+      "lat": 2.833054,
+      "lng": 98.52849,
+      "type": "camping",
+      "area": "Karo",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "clear_night"
+      ],
+      "category_tags": [
+        "camping"
+      ],
+      "image": "/images/placeholder-camping.jpg",
+      "osm_id": 9660243308,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Kebun Teh Bah Butong",
+      "rating": 3.9,
+      "lat": 2.85456,
+      "lng": 98.907161,
+      "type": "nature",
+      "area": "Karo",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 9661947805,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Museum Batak",
+      "rating": 3.8,
+      "lat": 2.650791,
+      "lng": 98.86019,
+      "type": "cultural",
+      "area": "Simalungun",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "light_rain"
+      ],
+      "category_tags": [
+        "cultural"
+      ],
+      "image": "/images/placeholder-cultural.jpg",
+      "osm_id": 3119943106,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Old grave ompu raja rosuhul sihaloho",
+      "rating": 3.8,
+      "lat": 2.749414,
+      "lng": 98.750043,
+      "type": "cultural",
+      "area": "Simalungun",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "light_rain"
+      ],
+      "category_tags": [
+        "cultural"
+      ],
+      "image": "/images/placeholder-cultural.jpg",
+      "osm_id": 3399878099,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Taman Getsemani",
+      "rating": 3.8,
+      "lat": 2.6933,
+      "lng": 98.818185,
+      "type": "nature",
+      "area": "Simalungun",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 4012182872,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Pantai Sibolazi",
+      "rating": 3.8,
+      "lat": 2.748449,
+      "lng": 98.751036,
+      "type": "beach",
+      "area": "Simalungun",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "beach"
+      ],
+      "image": "/images/placeholder-beach.jpg",
+      "osm_id": 4012203605,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Batu Sawan",
+      "rating": 3.8,
+      "lat": 2.590043,
+      "lng": 98.646777,
+      "type": "cultural",
+      "area": "Toba Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "light_rain"
+      ],
+      "category_tags": [
+        "cultural"
+      ],
+      "image": "/images/placeholder-cultural.jpg",
+      "osm_id": 4012806071,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Sopo Guru Tatea Bulan",
+      "rating": 3.8,
+      "lat": 2.591894,
+      "lng": 98.630613,
+      "type": "nature",
+      "area": "Toba Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 4014241365,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Open Stage",
+      "rating": 3.8,
+      "lat": 2.608527,
+      "lng": 98.69714,
+      "type": "nature",
+      "area": "Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 4014267121,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Pantai Ancol Pangururan",
+      "rating": 3.8,
+      "lat": 2.606413,
+      "lng": 98.695365,
+      "type": "beach",
+      "area": "Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "beach"
+      ],
+      "image": "/images/placeholder-beach.jpg",
+      "osm_id": 4014270051,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Latihan Paralayang",
+      "rating": 3.8,
+      "lat": 2.617746,
+      "lng": 98.871357,
+      "type": "nature",
+      "area": "Simalungun",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 4016528927,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Viewing platform",
+      "rating": 3.8,
+      "lat": 2.747739,
+      "lng": 98.750786,
+      "type": "nature",
+      "area": "Simalungun",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 4845539638,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Rustic lakeside picnic spot",
+      "rating": 3.8,
+      "lat": 2.563798,
+      "lng": 98.885971,
+      "type": "nature",
+      "area": "Toba Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 4952159624,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Bukit beta geopark",
+      "rating": 3.8,
+      "lat": 2.670491,
+      "lng": 98.848468,
+      "type": "nature",
+      "area": "Simalungun",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 5145202723,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Tugu Hariandja monument",
+      "rating": 3.8,
+      "lat": 2.468106,
+      "lng": 98.97823,
+      "type": "nature",
+      "area": "Toba Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 5147372421,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Toga sinaga",
+      "rating": 3.8,
+      "lat": 2.470954,
+      "lng": 98.822101,
+      "type": "nature",
+      "area": "Toba Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 5147372422,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Air Panas Hot Springs (lot of restaurants and hotels with hot spring swimming pools)",
+      "rating": 3.8,
+      "lat": 2.619214,
+      "lng": 98.674363,
+      "type": "nature",
+      "area": "Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 6249664547,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Hike start/Bike parking",
+      "rating": 3.8,
+      "lat": 2.59276,
+      "lng": 98.674751,
+      "type": "cultural",
+      "area": "Toba Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "light_rain"
+      ],
+      "category_tags": [
+        "cultural"
+      ],
+      "image": "/images/placeholder-cultural.jpg",
+      "osm_id": 6751274196,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Aek Natonang",
+      "rating": 3.8,
+      "lat": 2.560289,
+      "lng": 98.886167,
+      "type": "nature",
+      "area": "Toba Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 7100853985,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Sunrise",
+      "rating": 3.8,
+      "lat": 2.618406,
+      "lng": 98.871463,
+      "type": "viewpoint",
+      "area": "Simalungun",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "clear"
+      ],
+      "category_tags": [
+        "viewpoint"
+      ],
+      "image": "/images/placeholder-viewpoint.jpg",
+      "osm_id": 10981689805,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Air Mancur Menari Waterfront Pangururan",
+      "rating": 3.8,
+      "lat": 2.603835,
+      "lng": 98.699863,
+      "type": "nature",
+      "area": "Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 1286713334,
+      "osm_type": "way",
+      "source": "osm"
+    },
+    {
+      "name": "Pantai Batu Hoda",
+      "rating": 3.7,
+      "lat": 2.760111,
+      "lng": 98.724716,
+      "type": "cultural",
+      "area": "Karo",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "light_rain"
+      ],
+      "category_tags": [
+        "cultural"
+      ],
+      "image": "/images/placeholder-cultural.jpg",
+      "osm_id": 4012675405,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Tano Ponggol",
+      "rating": 3.7,
+      "lat": 2.611332,
+      "lng": 98.691956,
+      "type": "nature",
+      "area": "Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 4014240949,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Goa Maria",
+      "rating": 3.7,
+      "lat": 2.492182,
+      "lng": 98.808504,
+      "type": "nature",
+      "area": "Toba Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 4016487455,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Pantai Situngkir",
+      "rating": 3.7,
+      "lat": 2.702955,
+      "lng": 98.690032,
+      "type": "beach",
+      "area": "Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "beach"
+      ],
+      "image": "/images/placeholder-beach.jpg",
+      "osm_id": 4113494315,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Rice Terraces",
+      "rating": 3.7,
+      "lat": 2.490924,
+      "lng": 98.962896,
+      "type": "nature",
+      "area": "Toba Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 4845560029,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Monkey bridge",
+      "rating": 3.7,
+      "lat": 2.692891,
+      "lng": 98.926718,
+      "type": "nature",
+      "area": "Simalungun",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 5547402124,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Nice view",
+      "rating": 3.7,
+      "lat": 2.669114,
+      "lng": 98.850072,
+      "type": "viewpoint",
+      "area": "Simalungun",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "clear"
+      ],
+      "category_tags": [
+        "viewpoint"
+      ],
+      "image": "/images/placeholder-viewpoint.jpg",
+      "osm_id": 5561025022,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Ecovillage Silimalombu",
+      "rating": 3.7,
+      "lat": 2.557264,
+      "lng": 98.913215,
+      "type": "nature",
+      "area": "Toba Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 5661975821,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "tanjung unta",
+      "rating": 3.7,
+      "lat": 2.77202,
+      "lng": 98.808598,
+      "type": "nature",
+      "area": "Karo",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 6062487085,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "execution area",
+      "rating": 3.7,
+      "lat": 2.678631,
+      "lng": 98.836734,
+      "type": "nature",
+      "area": "Simalungun",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 6380387188,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "One Tree Hill",
+      "rating": 3.7,
+      "lat": 2.873377,
+      "lng": 98.503246,
+      "type": "viewpoint",
+      "area": "Karo",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "clear"
+      ],
+      "category_tags": [
+        "viewpoint"
+      ],
+      "image": "/images/placeholder-viewpoint.jpg",
+      "osm_id": 6380559685,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Samto Aek Rangat",
+      "rating": 3.7,
+      "lat": 2.530627,
+      "lng": 98.733808,
+      "type": "nature",
+      "area": "Toba Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 6387069985,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Pantai Kasih",
+      "rating": 3.7,
+      "lat": 2.826509,
+      "lng": 98.526321,
+      "type": "beach",
+      "area": "Karo",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "beach"
+      ],
+      "image": "/images/placeholder-beach.jpg",
+      "osm_id": 7037512385,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Good place for swim and camp",
+      "rating": 3.7,
+      "lat": 2.834847,
+      "lng": 98.525909,
+      "type": "camping",
+      "area": "Karo",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "clear_night"
+      ],
+      "category_tags": [
+        "camping"
+      ],
+      "image": "/images/placeholder-camping.jpg",
+      "osm_id": 7300998885,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Wonderful a view around Toba lake",
+      "rating": 3.7,
+      "lat": 2.83153,
+      "lng": 98.762748,
+      "type": "viewpoint",
+      "area": "Karo",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "clear"
+      ],
+      "category_tags": [
+        "viewpoint"
+      ],
+      "image": "/images/placeholder-viewpoint.jpg",
+      "osm_id": 7741137987,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Pusat Informasi Toba Caldera UNESCO Global Geopark",
+      "rating": 3.7,
+      "lat": 2.593588,
+      "lng": 98.633625,
+      "type": "nature",
+      "area": "Toba Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 1239539411,
+      "osm_type": "way",
+      "source": "osm"
+    },
+    {
+      "name": "Stone Chairs",
+      "rating": 3.6,
+      "lat": 2.676914,
+      "lng": 98.839631,
+      "type": "cultural",
+      "area": "Simalungun",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "light_rain"
+      ],
+      "category_tags": [
+        "cultural"
+      ],
+      "image": "/images/placeholder-cultural.jpg",
+      "osm_id": 3741552551,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Tugu Jala Uden",
+      "rating": 3.6,
+      "lat": 2.678018,
+      "lng": 98.690875,
+      "type": "nature",
+      "area": "Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 4012691760,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Kubah Lava Dasirik",
+      "rating": 3.6,
+      "lat": 2.591411,
+      "lng": 98.629501,
+      "type": "nature",
+      "area": "Toba Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 4014231882,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Batu Guru",
+      "rating": 3.6,
+      "lat": 2.435488,
+      "lng": 98.915736,
+      "type": "cultural",
+      "area": "Humbang Hasundutan",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "light_rain"
+      ],
+      "category_tags": [
+        "cultural"
+      ],
+      "image": "/images/placeholder-cultural.jpg",
+      "osm_id": 4016501340,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Pantai Pasi Putih Parbaba",
+      "rating": 3.6,
+      "lat": 2.695565,
+      "lng": 98.689837,
+      "type": "beach",
+      "area": "Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "beach"
+      ],
+      "image": "/images/placeholder-beach.jpg",
+      "osm_id": 4113263178,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Kuburan di atas pohon",
+      "rating": 3.6,
+      "lat": 2.648221,
+      "lng": 98.862545,
+      "type": "nature",
+      "area": "Simalungun",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 4952173122,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Hot springs",
+      "rating": 3.6,
+      "lat": 2.523159,
+      "lng": 98.742803,
+      "type": "nature",
+      "area": "Toba Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 5147370323,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Hadabuan Naisogop",
+      "rating": 3.6,
+      "lat": 2.589972,
+      "lng": 98.622352,
+      "type": "nature",
+      "area": "Toba Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "waterfall",
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 5151150423,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Simalem Resort",
+      "rating": 3.6,
+      "lat": 2.886236,
+      "lng": 98.504533,
+      "type": "nature",
+      "area": "Karo",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 5355762622,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Volleyball and soccer field",
+      "rating": 3.6,
+      "lat": 2.740662,
+      "lng": 98.763302,
+      "type": "nature",
+      "area": "Simalungun",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 5547410921,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Beautiful View",
+      "rating": 3.6,
+      "lat": 2.600096,
+      "lng": 98.738923,
+      "type": "viewpoint",
+      "area": "Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "clear"
+      ],
+      "category_tags": [
+        "viewpoint"
+      ],
+      "image": "/images/placeholder-viewpoint.jpg",
+      "osm_id": 6297008387,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "information board",
+      "rating": 3.6,
+      "lat": 2.679134,
+      "lng": 98.836256,
+      "type": "cultural",
+      "area": "Simalungun",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "light_rain"
+      ],
+      "category_tags": [
+        "cultural"
+      ],
+      "image": "/images/placeholder-cultural.jpg",
+      "osm_id": 6380412285,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Edistigor Air Panas",
+      "rating": 3.6,
+      "lat": 2.617712,
+      "lng": 98.676623,
+      "type": "nature",
+      "area": "Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 6421308685,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Huta Ginjang",
+      "rating": 3.6,
+      "lat": 2.314576,
+      "lng": 98.970496,
+      "type": "cultural",
+      "area": "Humbang Hasundutan",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "light_rain"
+      ],
+      "category_tags": [
+        "cultural"
+      ],
+      "image": "/images/placeholder-cultural.jpg",
+      "osm_id": 9861718417,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Tugu",
+      "rating": 3.6,
+      "lat": 2.679311,
+      "lng": 98.83615,
+      "type": "cultural",
+      "area": "Simalungun",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "light_rain"
+      ],
+      "category_tags": [
+        "history",
+        "cultural"
+      ],
+      "image": "/images/placeholder-cultural.jpg",
+      "osm_id": 332702456,
+      "osm_type": "way",
+      "source": "osm"
+    },
+    {
+      "name": "Hotspring",
+      "rating": 3.5,
+      "lat": 2.619034,
+      "lng": 98.673874,
+      "type": "nature",
+      "area": "Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy"
+      ],
+      "category_tags": [
+        "nature"
+      ],
+      "image": "/images/placeholder-nature.jpg",
+      "osm_id": 4014240935,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Amazing viewpoint.",
+      "rating": 3.5,
+      "lat": 2.629595,
+      "lng": 98.654034,
+      "type": "viewpoint",
+      "area": "Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "clear"
+      ],
+      "category_tags": [
+        "viewpoint"
+      ],
+      "image": "/images/placeholder-viewpoint.jpg",
+      "osm_id": 5491624421,
+      "osm_type": "node",
+      "source": "osm"
+    },
+    {
+      "name": "Parsaktian Pusuk Buhit",
+      "rating": 3.5,
+      "lat": 2.601067,
+      "lng": 98.654628,
+      "type": "cultural",
+      "area": "Samosir",
+      "accessibility": 0.5,
+      "baseline_crowd": 0.4,
+      "weather_prefs": [
+        "sunny",
+        "cloudy",
+        "light_rain"
+      ],
+      "category_tags": [
+        "cultural"
+      ],
+      "image": "/images/placeholder-cultural.jpg",
+      "osm_id": 11515376530,
+      "osm_type": "node",
+      "source": "osm"
+    }
+  ]
+}
