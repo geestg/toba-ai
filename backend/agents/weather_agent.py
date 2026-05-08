@@ -1,25 +1,49 @@
-from backend.services.weather_service import get_weather_data, get_weather_suitability
+import json
+from pathlib import Path
+
+# =========================================
+# LOAD WEATHER DATA
+# =========================================
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+WEATHER_FILE = BASE_DIR / "data" / "weather.json"
+
+with open(WEATHER_FILE, "r", encoding="utf-8") as f:
+    WEATHER_DATA = json.load(f)
 
 
-def get_weather(location_name, area=None):
+# =========================================
+# GET WEATHER
+# =========================================
+
+def get_weather(destination_name):
+    """Get weather data for a destination."""
+    return WEATHER_DATA.get(destination_name, {
+        "condition": "Unknown",
+        "temperature": 0
+    })
+
+
+# =========================================
+# SCORE WEATHER FOR DESTINATION
+# =========================================
+
+def score_weather_for_destination(destination, weather):
     """
-    Get weather data for a location.
-    If area is provided, uses area-specific weather patterns.
+    Score weather suitability (0-1).
+    Clear/sunny = good, light rain/cloudy = okay, heavy rain/foggy = poor
     """
-    return get_weather_data(location_name, area)
-
-
-def score_weather_for_destination(weather, dest_type):
-    """
-    Score how suitable the current weather is for a destination type.
-
-    Args:
-        weather: dict with at least "condition" key
-        dest_type: destination type (nature, religious, viewpoint, etc.)
-
-    Returns:
-        float between 0.0 and 1.0
-    """
-    condition = weather.get("condition", "Sunny")
-    return get_weather_suitability(dest_type, condition)
-
+    condition = weather.get("condition", "Unknown").lower()
+    
+    if condition in ["cerah", "sunny", "clear"]:
+        return 0.9
+    elif condition in ["berawan", "cloudy"]:
+        return 0.7
+    elif condition in ["berkabut", "foggy"]:
+        return 0.5
+    elif condition in ["hujan ringan", "light rain"]:
+        return 0.4
+    elif condition in ["hujan", "rain", "heavy rain"]:
+        return 0.2
+    else:
+        return 0.5

@@ -150,35 +150,39 @@ function App() {
   const location = useLocation();
   const [messages, setMessages] = useState([]);
   const [input, setInput] = useState("");
-  const [activeLocation, setActiveLocation] = useState(null);
+  const [activeLocation, setActiveLocation] = useState(() => {
+    const savedLat = localStorage.getItem("toba_user_lat");
+    const savedLng = localStorage.getItem("toba_user_lng");
+    if (savedLat && savedLng) {
+      return {
+        name: "Lokasi Saya",
+        lat: parseFloat(savedLat),
+        lng: parseFloat(savedLng),
+      };
+    }
+    return null;
+  });
   const [selectedDestination, setSelectedDestination] = useState(null);
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [themeMode, setThemeMode] = useState("siang");
-  const [gpsActive, setGpsActive] = useState(false);
-  const [gpsLocation, setGpsLocation] = useState(null);
+  const [gpsActive, setGpsActive] = useState(() => {
+    return Boolean(localStorage.getItem("toba_user_lat") && localStorage.getItem("toba_user_lng"));
+  });
+  const [gpsLocation, setGpsLocation] = useState(() => {
+    const savedLat = localStorage.getItem("toba_user_lat");
+    const savedLng = localStorage.getItem("toba_user_lng");
+    if (savedLat && savedLng) {
+      return {
+        lat: parseFloat(savedLat),
+        lng: parseFloat(savedLng),
+      };
+    }
+    return null;
+  });
   const [visitedDestinations, setVisitedDestinations] = useState(() => {
     const saved = localStorage.getItem("toba-visited");
     return saved ? JSON.parse(saved) : [];
   });
-
-  // Auto-request browser geolocation on mount
-  useEffect(() => {
-    if ("geolocation" in navigator) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          const loc = {
-            lat: position.coords.latitude,
-            lng: position.coords.longitude,
-          };
-          handleToggleGPS(loc);
-        },
-        (error) => {
-          console.warn("Geolocation denied or failed:", error.message);
-        },
-        { enableHighAccuracy: true, timeout: 10000, maximumAge: 60000 }
-      );
-    }
-  }, []);
 
   useEffect(() => {
     document.body.dataset.theme = themeMode;

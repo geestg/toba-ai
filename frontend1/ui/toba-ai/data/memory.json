@@ -1,0 +1,358 @@
+{
+  "default_user": {
+    "history": [
+      "halo",
+      "Saya mau ke Holbung",
+      "Rekomendasikan tempat terbaik hari ini",
+      "Saya mau ke Holbung",
+      "Rekomendasikan tempat terbaik hari ini",
+      "hoi",
+      "Rekomendasikan tempat terbaik hari ini",
+      "Saya mau ke Holbung",
+      "Saya mau ke Holbung",
+      "Rekomendasikan tempat terbaik hari ini",
+      "Saya mau ke Holbung",
+      "Rekomendasikan tempat terbaik hari ini",
+      "Saya mau ke Holbung",
+      "saya mau jalan jalan ke holbung",
+      "Rekomendasikan tempat terbaik hari ini",
+      "Saya mau ke Holbung",
+      "saya mau jalan jalan ke holbung",
+      "aku mau ke sibea bea jalan jalan",
+      "Saya mau ke Parbaba",
+      "Saya mau ke Tongging",
+      "Saya mau ke Holbung",
+      "saya mau jalan jalan ke holbung",
+      "hi",
+      "hi",
+      "hi",
+      "hi",
+      "Buat rencana perjalanan 2 hari",
+      "Rekomendasi kuliner khas",
+      "Cara transportasi ke Danau Toba",
+      "hi",
+      "gatau",
+      "Rekomendasi kuliner khas",
+      "HI",
+      "JI",
+      "HI",
+      "hi",
+      "hi",
+      "hi",
+      "b",
+      "hi",
+      "rute ke balige",
+      "hi",
+      "Buat rencana perjalanan 2 hari",
+      "Buat rencana perjalanan 2 hari",
+      "Rekomendasikan destinasi populer",
+      "hi",
+      "hi",
+      "hi",
+      "hi",
+      "rute ke Sibea",
+      "rute ke balige",
+      "hi ",
+      "rekomendasi wisata di danau tob a",
+      "Pilih Sibea",
+      "car rekomendasi wisata di sekitaran danau toba",
+      "Pilih Sipinsur"
+    ],
+    "preferences": {}
+  },
+  "user_4vdm091p": {
+    "history": [
+      "rekomendasi wisata di danau toba ",
+      "Pilih Sibea",
+      "Pilih Sibea",
+      "Pilih Sibea",
+      "Pilih Sibea",
+      "saya mau rekomendasi danau toba ",
+      "saya mau rekomendasi wisata di danau toba",
+      "apakah ada opsi lain ",
+      "cuaca Batu Hobon",
+      "wisata Batu Hobon",
+      "saya  mau  rekomendasi wisata danau toba ",
+      "hi",
+      "rekomendasi wisata toba ",
+      "rekomendasi wisata danau toba "
+    ],
+    "preferences": {
+      "selected_destination": {
+        "rank": 1,
+        "name": "Sibea",
+        "type": "religious",
+        "rating": 4.7,
+        "lat": 2.589,
+        "lng": 98.912,
+        "score": 0.804,
+        "reason": "Rating tinggi (4.7); Cuaca Sunny cocok untuk religious; Tingkat keramaian nyaman; Mudah diakses",
+        "weather_note": "Sunny, 27.9\u00b0C \u2014 cuaca ideal",
+        "crowd_note": "Sedang (trend: stabil) \u2014 sekarang atau sore hari",
+        "weather": {
+          "location": "Sibea",
+          "area": "Samosir",
+          "temperature": 27.9,
+          "condition": "Sunny",
+          "time_of_day": "afternoon",
+          "humidity": 75,
+          "wind_speed": 16,
+          "source": "fallback"
+        },
+        "crowd": {
+          "location": "Sibea",
+          "score": 0.46,
+          "level": "sedang",
+          "trend": "stabil",
+          "best_time": "sekarang atau sore hari",
+          "confidence": "medium",
+          "data_source_note": "Estimasi berdasarkan waktu & baseline",
+          "heuristic_score": 0.46,
+          "mobile_score": null,
+          "sample_size": null,
+          "live_presence_count": 0,
+          "live_presence_source": "none"
+        },
+        "area": "Samosir",
+        "accessibility": 0.8,
+        "tags": [
+          "church",
+          "history",
+          "culture",
+          "architecture"
+        ]
+      }
+    },
+    "selected_destinations": [
+      {
+        "name": "Sibea",
+        "timestamp": "2026-04-27 12:01:05.191484"
+      },
+      {
+        "name": "Sibea",
+        "timestamp": "2026-04-27 12:01:06.213041"
+      }
+    ]
+  },
+  "user_uf058u4o": {
+    "history": [
+      "wisata di danau toba ",
+      "Pilih Sibea",
+      "Pilih Sibea",
+      "Pilih Sipinsur",
+      "Pilih Sipinsur",
+      "Pilih Tongging",
+      "Pilih Tongging",
+      "saya mau rekomendasi wsata lokal di danau toba ",
+      "rekomendasi wisata di dekat saya ",
+      "Pilih Stone Chairs of Ambarita",
+      "Pilih Stone Chairs of Ambarita",
+      "Cari penginapan sekitar",
+      "wisata lain ",
+      "Pilih Batu Hobon",
+      "Pilih Batu Hobon",
+      "wisata di samosir",
+      "Pilih Patung Sigale Gale",
+      "Pilih Patung Sigale Gale"
+    ],
+    "preferences": {
+      "selected_destination": {
+        "rank": 2,
+        "name": "Patung Sigale Gale",
+        "type": "nature",
+        "rating": 4.1,
+        "lat": 2.651854,
+        "lng": 98.860899,
+        "score": 0.766,
+        "reason": "Rating tinggi (4.1); Cuaca Cloudy cocok untuk nature; Tingkat keramaian nyaman",
+        "weather_note": "Cloudy, 24.5\u00b0C \u2014 masih nyaman",
+        "crowd_note": "Sedang (trend: naik) \u2014 sekarang atau sore hari",
+        "weather": {
+          "location": "Patung Sigale Gale",
+          "area": "Simalungun",
+          "temperature": 24.5,
+          "condition": "Cloudy",
+          "time_of_day": "morning",
+          "humidity": 74,
+          "wind_speed": 17,
+          "source": "fallback"
+        },
+        "crowd": {
+          "location": "Patung Sigale Gale",
+          "score": 0.51,
+          "level": "sedang",
+          "trend": "naik",
+          "best_time": "sekarang atau sore hari",
+          "confidence": "medium",
+          "data_source_note": "Estimasi berdasarkan waktu & baseline",
+          "heuristic_score": 0.51,
+          "mobile_score": null,
+          "sample_size": null
+        },
+        "area": "Simalungun",
+        "accessibility": 0.5,
+        "tags": [
+          "nature"
+        ]
+      }
+    },
+    "selected_destinations": [
+      {
+        "name": "Sibea",
+        "timestamp": "2026-04-27 13:49:18.481051"
+      },
+      {
+        "name": "Sipinsur",
+        "timestamp": "2026-04-27 13:49:56.815206"
+      },
+      {
+        "name": "Tongging",
+        "timestamp": "2026-04-27 13:50:06.000849"
+      },
+      {
+        "name": "Stone Chairs of Ambarita",
+        "timestamp": "2026-04-28 08:29:05.932885"
+      },
+      {
+        "name": "Batu Hobon",
+        "timestamp": "2026-04-28 08:54:27.511588"
+      },
+      {
+        "name": "Patung Sigale Gale",
+        "timestamp": "2026-04-28 09:09:50.530822"
+      }
+    ]
+  },
+  "user_zydpg97c": {
+      "history": [
+      "hi ",
+      "wisata danau toba ",
+      "Pilih Patung Sigale Gale",
+      "Pilih Patung Sigale Gale",
+      "Cari rumah makan sekitar",
+      "Cari penginapan sekitar",
+      "ada rekomendasi lain ? ",
+      "saya mau ke danau toba rekomendasi wisata disana apa aj aya ",
+      "saya mau ke danau toba rekomendasi wisata disana apa aj aya ",
+      "ada saran lain ? ",
+      "Pilih Museum Huta Bolon Simanindo",
+      "Pilih Museum Huta Bolon Simanindo",
+      "wisata danau toba disekitar saya ",
+      "Pilih Tugu Hariandja monument",
+      "Pilih Tugu Hariandja monument",
+      "Cari penginapan sekitar",
+      "coba rekomendasikan lokasi wisata di sekitaran danau toba",
+      "Pilih Patung Yesus, Bukit Sibea-bea",
+      "Pilih Patung Yesus, Bukit Sibea-bea",
+      "Pilih Batak King Grave",
+      "Pilih Batak King Grave",
+      "Pilih Museum Huta Bolon Simanindo",
+      "Pilih Museum Huta Bolon Simanindo",
+      "rekomendasi wisata di sekitar danau toba ",
+      "Pilih Batak King Grave",
+      "Pilih Batak King Grave",
+      "wisata di danau toba",
+      "Pilih View on the lake",
+      "Pilih View on the lake",
+      "Pilih Bolon Simanindo",
+      "Pilih Bolon Simanindo",
+      "rekomendasi wisata di danau toba ",
+      "Pilih Patung Sigale Gale",
+      "Pilih Patung Sigale Gale",
+      "Pilih Batak King Grave",
+      "Pilih Batak King Grave",
+      "Cari rumah makan sekitar"
+    ],
+    "preferences": {
+      "selected_destination": {
+        "rank": 3,
+        "name": "Batak King Grave",
+        "type": "cultural",
+        "rating": 4.1,
+        "lat": 2.651358,
+        "lng": 98.860585,
+        "score": 0.739,
+        "reason": "Rating tinggi (4.1); Cuaca Clear cocok untuk cultural; Tidak terlalu ramai",
+        "weather_note": "Clear, 26.9\u00b0C \u2014 cuaca ideal",
+        "crowd_note": "Sepi (trend: naik) \u2014 sekarang",
+        "weather": {
+          "location": "Batak King Grave",
+          "area": "Simalungun",
+          "temperature": 26.9,
+          "condition": "Clear",
+          "time_of_day": "afternoon",
+          "humidity": 83,
+          "wind_speed": 12,
+          "source": "fallback"
+        },
+        "crowd": {
+          "location": "Batak King Grave",
+          "score": 0.33,
+          "level": "sepi",
+          "trend": "naik",
+          "best_time": "sekarang",
+          "confidence": "medium",
+          "data_source_note": "Estimasi berdasarkan waktu & baseline",
+          "heuristic_score": 0.33,
+          "mobile_score": null,
+          "sample_size": null
+        },
+        "area": "Simalungun",
+        "accessibility": 0.5,
+        "tags": [
+          "cultural"
+        ]
+      }
+    },
+    "selected_destinations": [
+      {
+        "name": "Patung Sigale Gale",
+        "timestamp": "2026-04-27 22:51:31.398557"
+      },
+      {
+        "name": "Simanindo viewpoint",
+        "timestamp": "2026-04-27 22:56:26.897959"
+      },
+      {
+        "name": "Museum Huta Bolon Simanindo",
+        "timestamp": "2026-04-27 23:26:21.801674"
+      },
+      {
+        "name": "Tugu Hariandja monument",
+        "timestamp": "2026-04-27 23:35:39.290545"
+      },
+      {
+        "name": "Patung Yesus, Bukit Sibea-bea",
+        "timestamp": "2026-04-28 09:36:39.574253"
+      },
+      {
+        "name": "Batak King Grave",
+        "timestamp": "2026-04-28 09:37:05.160413"
+      },
+      {
+        "name": "Museum Huta Bolon Simanindo",
+        "timestamp": "2026-04-28 09:37:26.447602"
+      },
+      {
+        "name": "Batak King Grave",
+        "timestamp": "2026-04-28 10:07:26.389389"
+      },
+      {
+        "name": "View on the lake",
+        "timestamp": "2026-04-28 10:23:28.252673"
+      },
+      {
+        "name": "Bolon Simanindo",
+        "timestamp": "2026-04-28 10:23:43.808232"
+      },
+      {
+        "name": "Patung Sigale Gale",
+        "timestamp": "2026-04-28 11:42:12.065537"
+      },
+      {
+        "name": "Batak King Grave",
+        "timestamp": "2026-04-28 11:43:11.803793"
+      }
+    ]
+  }
+}

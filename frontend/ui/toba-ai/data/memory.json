@@ -224,7 +224,7 @@
     ]
   },
   "user_zydpg97c": {
-      "history": [
+    "history": [
       "hi ",
       "wisata danau toba ",
       "Pilih Patung Sigale Gale",
@@ -352,6 +352,73 @@
       {
         "name": "Batak King Grave",
         "timestamp": "2026-04-28 11:43:11.803793"
+      }
+    ]
+  },
+  "user_vz30pb7w": {
+    "history": [
+      "Cicipi makanan Batak yang wajib dicoba",
+      "Rekomendasikan destinasi populer sekitar saya",
+      "Buat itinerary 2 hari 1 malam di Samosir",
+      "saya mau jalan jalan ke holbung",
+      "Buat itinerary 2 hari 1 malam di Samosir",
+      "saya  mau liburan ke holbung samosir",
+      "Pilih Museum Huta Bolon Simanindo",
+      "Pilih Museum Huta Bolon Simanindo",
+      "Cari rumah makan sekitar",
+      "Cari penginapan sekitar",
+      "Cicipi makanan Batak yang wajib dicoba",
+      "saya mau liburan ke sibea bea",
+      "hai",
+      "saya mau liburan ke sibea bea",
+      "Cicipi makanan Batak yang wajib dicoba",
+      "saya mau liburan ke sibea bea"
+    ],
+    "preferences": {
+      "selected_destination": {
+        "rank": 1,
+        "name": "Museum Huta Bolon Simanindo",
+        "type": "cultural",
+        "rating": 4.2,
+        "lat": 2.752375,
+        "lng": 98.744123,
+        "score": 0.771,
+        "reason": "Rating tinggi (4.2); Tingkat keramaian nyaman",
+        "weather_note": "Foggy, 19.6\u00b0C \u2014 bawa pelindung",
+        "crowd_note": "Sedang (trend: turun) \u2014 sekarang atau sore hari",
+        "weather": {
+          "location": "Museum Huta Bolon Simanindo",
+          "area": "Karo",
+          "temperature": 19.6,
+          "condition": "Foggy",
+          "time_of_day": "evening",
+          "humidity": 84,
+          "wind_speed": 15,
+          "source": "fallback"
+        },
+        "crowd": {
+          "location": "Museum Huta Bolon Simanindo",
+          "score": 0.51,
+          "level": "sedang",
+          "trend": "turun",
+          "best_time": "sekarang atau sore hari",
+          "confidence": "medium",
+          "data_source_note": "Estimasi berdasarkan waktu & baseline",
+          "heuristic_score": 0.51,
+          "mobile_score": null,
+          "sample_size": null
+        },
+        "area": "Karo",
+        "accessibility": 0.5,
+        "tags": [
+          "cultural"
+        ]
+      }
+    },
+    "selected_destinations": [
+      {
+        "name": "Museum Huta Bolon Simanindo",
+        "timestamp": "2026-05-07 16:48:51.358244"
       }
     ]
   }

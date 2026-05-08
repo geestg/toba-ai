@@ -1,0 +1,497 @@
+{
+  "Bukit Holbung": {
+    "hotel_name": "Holbung Mountain Resort",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234567",
+    "contact_email": "info@holbungresort.com",
+    "contact_address": "Jln. Puncak Holbung No.45, Kabupaten Samosir",
+    "operating_hours": "24 Jam",
+    "website": "www.holbungresort.com"
+  },
+  "Pantai Parbaba": {
+    "hotel_name": "Parbaba Beach Hotel",
+    "hotel_availability": "limited",
+    "contact_phone": "+62-631-8234568",
+    "contact_email": "booking@parbababeach.com",
+    "contact_address": "Jln. Tepi Pantai No.12, Pardesuan",
+    "operating_hours": "Setiap Hari 06:00-23:00",
+    "website": "www.parbababeach.com"
+  },
+  "Air Terjun Sipiso Piso": {
+    "hotel_name": "Sipiso Piso Waterfall Lodge",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234569",
+    "contact_email": "stay@sipiso-lodge.com",
+    "contact_address": "Jln. Jalan Kecil Sipiso Piso, Tongging",
+    "operating_hours": "24 Jam",
+    "website": "www.sipiso-lodge.com"
+  },
+  "Desa Tomok": {
+    "hotel_name": "Tomok Heritage Inn",
+    "hotel_availability": "limited",
+    "contact_phone": "+62-631-8234570",
+    "contact_email": "reservasi@tomokinn.com",
+    "contact_address": "Jln. Desa Tomok No.8, Samosir",
+    "operating_hours": "Setiap Hari 07:00-22:00",
+    "website": "www.tomokinn.com"
+  },
+  "Bukit Sibea Bea": {
+    "hotel_name": "Sibea Bea Peak Hotel",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234571",
+    "contact_email": "hello@sibeapeak.com",
+    "contact_address": "Jln. Raya Sibea Bea No.33, Taptapanuli Utara",
+    "operating_hours": "24 Jam",
+    "website": "www.sibeapeak.com"
+  },
+  "Pantai Tongging": {
+    "hotel_name": "Tongging Beachfront Hotel",
+    "hotel_availability": "limited",
+    "contact_phone": "+62-631-8234572",
+    "contact_email": "contact@tonggingbeach.com",
+    "contact_address": "Jln. Tepi Danau Tongging, Kecamatan Tongging",
+    "operating_hours": "Setiap Hari 06:00-23:00",
+    "website": "www.tonggingbeach.com"
+  },
+  "Tepi Danau Toba": {
+    "hotel_name": "Toba Lakeside Boutique",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234573",
+    "contact_email": "book@tobaboutique.com",
+    "contact_address": "Jln. Tepi Danau Toba No.55, Sumatera Utara",
+    "operating_hours": "24 Jam",
+    "website": "www.tobaboutique.com"
+  },
+  "Kampung Seni": {
+    "hotel_name": "Seni Kampung Guesthouse",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234574",
+    "contact_email": "stay@senikampung.com",
+    "contact_address": "Jln. Jalan Seni No.20, Desa Wisata",
+    "operating_hours": "24 Jam",
+    "website": "www.senikampung.com"
+  },
+  "Situs Batu Passe": {
+    "hotel_name": "Batu Passe Heritage Hotel",
+    "hotel_availability": "limited",
+    "contact_phone": "+62-631-8234575",
+    "contact_email": "info@batupassehotel.com",
+    "contact_address": "Jln. Arkeologi No.7, Situs Batu Passe",
+    "operating_hours": "Setiap Hari 07:00-21:00",
+    "website": "www.batupassehotel.com"
+  },
+  "Bukit Pakkodian": {
+    "hotel_name": "Pakkodian Summit Resort",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234576",
+    "contact_email": "reservations@pakkodian.com",
+    "contact_address": "Jln. Puncak Pakkodian No.15, Kabupaten Simalungun",
+    "operating_hours": "24 Jam",
+    "website": "www.pakkodian.com"
+  },
+  "Pantai Sibodiala": {
+    "hotel_name": "Sibodiala Coastal Resort",
+    "hotel_availability": "limited",
+    "contact_phone": "+62-631-8234577",
+    "contact_email": "book@sibodiala.com",
+    "contact_address": "Jln. Pantai Sibodiala, Sumatera Utara",
+    "operating_hours": "Setiap Hari 06:00-23:00",
+    "website": "www.sibodiala.com"
+  },
+  "Sidihoni Lookout": {
+    "hotel_name": "Sidihoni Viewpoint Inn",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234578",
+    "contact_email": "info@sidihoniinn.com",
+    "contact_address": "Jln. Pemandangan Sidihoni No.42, Kecamatan Balige",
+    "operating_hours": "24 Jam",
+    "website": "www.sidihoniinn.com"
+  },
+  "Simarjarunjung Trail": {
+    "hotel_name": "Simarjarunjung Trail Lodge",
+    "hotel_availability": "limited",
+    "contact_phone": "+62-631-8234579",
+    "contact_email": "stay@simartrail.com",
+    "contact_address": "Jln. Jalur Simarjarunjung No.18, Samosir",
+    "operating_hours": "Setiap Hari 07:00-22:00",
+    "website": "www.simartrail.com"
+  },
+  "Sipinsur Valley": {
+    "hotel_name": "Sipinsur Valley Resort",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234580",
+    "contact_email": "booking@sipinsurvalley.com",
+    "contact_address": "Jln. Lembah Sipinsur No.99, Taptapanuli Utara",
+    "operating_hours": "24 Jam",
+    "website": "www.sipinsurvalley.com"
+  },
+  "Pelabuhan Wisata": {
+    "hotel_name": "Pelabuhan Harbor Hotel",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234581",
+    "contact_email": "contact@pelabuhanhotel.com",
+    "contact_address": "Jln. Dermaga Wisata No.3, Parmeduan",
+    "operating_hours": "24 Jam",
+    "website": "www.pelabuhanhotel.com"
+  },
+  "Wisata Kuliner Pasar Lokal": {
+    "hotel_name": "Pasar Lokal Culinary Inn",
+    "hotel_availability": "limited",
+    "contact_phone": "+62-631-8234582",
+    "contact_email": "book@pasarlokal.com",
+    "contact_address": "Jln. Pasar Wisata No.25, Kota Pematang Siantar",
+    "operating_hours": "Setiap Hari 08:00-21:00",
+    "website": "www.pasarlokal.com"
+  },
+  "Pusat Kerajinan UMKM": {
+    "hotel_name": "UMKM Craft Center Hotel",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234583",
+    "contact_email": "info@umkmcraft.com",
+    "contact_address": "Jln. Pusat Kerajinan No.50, Samosir",
+    "operating_hours": "24 Jam",
+    "website": "www.umkmcraft.com"
+  },
+  "Hutan Pendidikan": {
+    "hotel_name": "Educational Forest Lodge",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234584",
+    "contact_email": "stay@forestlodge.com",
+    "contact_address": "Jln. Hutan Pendidikan No.60, Kabupaten Dairi",
+    "operating_hours": "24 Jam",
+    "website": "www.forestlodge.com"
+  },
+  "Air Terjun Mini": {
+    "hotel_name": "Mini Waterfall Guesthouse",
+    "hotel_availability": "limited",
+    "contact_phone": "+62-631-8234585",
+    "contact_email": "book@miniwaterfall.com",
+    "contact_address": "Jln. Air Terjun Kecil No.11, Tongging",
+    "operating_hours": "Setiap Hari 07:00-22:00",
+    "website": "www.miniwaterfall.com"
+  },
+  "Spot Memancing Lokal": {
+    "hotel_name": "Local Fishing Spot Hotel",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234586",
+    "contact_email": "reservasi@fishingspot.com",
+    "contact_address": "Jln. Pantai Memancing No.22, Pardesuan",
+    "operating_hours": "24 Jam",
+    "website": "www.fishingspot.com"
+  },
+  "Kawasan Agrowisata": {
+    "hotel_name": "Agrowisata Zone Resort",
+    "hotel_availability": "limited",
+    "contact_phone": "+62-631-8234587",
+    "contact_email": "contact@agrowisata.com",
+    "contact_address": "Jln. Kawasan Agro No.77, Kabupaten Humbang Hasundutan",
+    "operating_hours": "Setiap Hari 06:00-22:00",
+    "website": "www.agrowisata.com"
+  },
+  "Jalan Setapak Panorama": {
+    "hotel_name": "Panorama Pathway Inn",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234588",
+    "contact_email": "info@panoramapathway.com",
+    "contact_address": "Jln. Setapak Pemandangan No.35, Kecamatan Balige",
+    "operating_hours": "24 Jam",
+    "website": "www.panoramapathway.com"
+  },
+  "Puncak Sunrise": {
+    "hotel_name": "Sunrise Peak Hotel",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234589",
+    "contact_email": "book@sunrisepeak.com",
+    "contact_address": "Jln. Puncak Fajar No.88, Samosir",
+    "operating_hours": "24 Jam",
+    "website": "www.sunrisepeak.com"
+  },
+  "Area Camping": {
+    "hotel_name": "Camping Ground Resort",
+    "hotel_availability": "limited",
+    "contact_phone": "+62-631-8234590",
+    "contact_email": "camping@groundresort.com",
+    "contact_address": "Jln. Area Berkemah No.16, Taptapanuli Utara",
+    "operating_hours": "Setiap Hari 06:00-23:00",
+    "website": "www.groundresort.com"
+  },
+  "Rute Sepeda": {
+    "hotel_name": "Bike Route Lodge",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234591",
+    "contact_email": "stay@bikeroutelodge.com",
+    "contact_address": "Jln. Jalur Sepeda No.47, Kabupaten Samosir",
+    "operating_hours": "24 Jam",
+    "website": "www.bikeroutelodge.com"
+  },
+  "Wisata Edukasi": {
+    "hotel_name": "Educational Tourism Inn",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234592",
+    "contact_email": "info@educationtourism.com",
+    "contact_address": "Jln. Pusat Edukasi No.30, Desa Wisata",
+    "operating_hours": "24 Jam",
+    "website": "www.educationtourism.com"
+  },
+  "Pusat Informasi Turis": {
+    "hotel_name": "Tourist Information Hotel",
+    "hotel_availability": "limited",
+    "contact_phone": "+62-631-8234593",
+    "contact_email": "info@touristcenter.com",
+    "contact_address": "Jln. Informasi Turis No.5, Kota Pematang Siantar",
+    "operating_hours": "Setiap Hari 08:00-20:00",
+    "website": "www.touristcenter.com"
+  },
+  "Ritual Budaya": {
+    "hotel_name": "Cultural Ritual Resort",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234594",
+    "contact_email": "booking@culturalritual.com",
+    "contact_address": "Jln. Ritual Budaya No.66, Samosir",
+    "operating_hours": "24 Jam",
+    "website": "www.culturalritual.com"
+  },
+  "Jalur Burung": {
+    "hotel_name": "Bird Path Guesthouse",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234595",
+    "contact_email": "stay@birdpath.com",
+    "contact_address": "Jln. Jalur Burung No.21, Kabupaten Dairi",
+    "operating_hours": "24 Jam",
+    "website": "www.birdpath.com"
+  },
+  "Gua Lokal": {
+    "hotel_name": "Local Cave Adventure Hotel",
+    "hotel_availability": "limited",
+    "contact_phone": "+62-631-8234596",
+    "contact_email": "adventure@localcave.com",
+    "contact_address": "Jln. Gua Lokal No.14, Kabupaten Simalungun",
+    "operating_hours": "Setiap Hari 07:00-21:00",
+    "website": "www.localcave.com"
+  },
+  "Air Panas Alami": {
+    "hotel_name": "Natural Hot Spring Resort",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234597",
+    "contact_email": "booking@hotspringresort.com",
+    "contact_address": "Jln. Air Panas No.73, Kabupaten Humbang Hasundutan",
+    "operating_hours": "24 Jam",
+    "website": "www.hotspringresort.com"
+  },
+  "Panorama Bukit": {
+    "hotel_name": "Hilltop Panorama Lodge",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234598",
+    "contact_email": "info@hilltopview.com",
+    "contact_address": "Jln. Panorama Bukit No.44, Taptapanuli Utara",
+    "operating_hours": "24 Jam",
+    "website": "www.hilltopview.com"
+  },
+  "Pasar Malam": {
+    "hotel_name": "Night Market Hotel",
+    "hotel_availability": "limited",
+    "contact_phone": "+62-631-8234599",
+    "contact_email": "book@nightmarket.com",
+    "contact_address": "Jln. Pasar Malam No.9, Kota Pematang Siantar",
+    "operating_hours": "Setiap Hari 16:00-23:00",
+    "website": "www.nightmarket.com"
+  },
+  "Sentra Oleh-Oleh": {
+    "hotel_name": "Souvenir Center Inn",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234600",
+    "contact_email": "stay@souvenircenter.com",
+    "contact_address": "Jln. Sentra Oleh-Oleh No.28, Samosir",
+    "operating_hours": "24 Jam",
+    "website": "www.souvenircenter.com"
+  },
+  "Kafe Pinggir Danau": {
+    "hotel_name": "Lakeside Cafe Hotel",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234601",
+    "contact_email": "reservasi@lakesidecafe.com",
+    "contact_address": "Jln. Tepi Danau Kafe No.51, Pardesuan",
+    "operating_hours": "24 Jam",
+    "website": "www.lakesidecafe.com"
+  },
+  "Observatorium Mini": {
+    "hotel_name": "Mini Observatory Lodge",
+    "hotel_availability": "limited",
+    "contact_phone": "+62-631-8234602",
+    "contact_email": "book@miniobservatory.com",
+    "contact_address": "Jln. Observatorium Kecil No.62, Kabupaten Dairi",
+    "operating_hours": "Setiap Hari 18:00-23:00",
+    "website": "www.miniobservatory.com"
+  },
+  "Kawasan Olahraga": {
+    "hotel_name": "Sports Zone Resort",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234603",
+    "contact_email": "info@sportszone.com",
+    "contact_address": "Jln. Kawasan Olahraga No.37, Kabupaten Simalungun",
+    "operating_hours": "24 Jam",
+    "website": "www.sportszone.com"
+  },
+  "Galeria Seni Lokal": {
+    "hotel_name": "Local Art Gallery Hotel",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234604",
+    "contact_email": "stay@artgalleryhotel.com",
+    "contact_address": "Jln. Galeria Seni No.19, Desa Wisata",
+    "operating_hours": "24 Jam",
+    "website": "www.artgalleryhotel.com"
+  },
+  "Kebun Buah": {
+    "hotel_name": "Fruit Garden Guesthouse",
+    "hotel_availability": "limited",
+    "contact_phone": "+62-631-8234605",
+    "contact_email": "book@fruitgarden.com",
+    "contact_address": "Jln. Kebun Buah No.26, Kabupaten Humbang Hasundutan",
+    "operating_hours": "Setiap Hari 07:00-20:00",
+    "website": "www.fruitgarden.com"
+  },
+  "Rimba Edukasi": {
+    "hotel_name": "Educational Forest Resort",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234606",
+    "contact_email": "info@educforest.com",
+    "contact_address": "Jln. Rimba Edukasi No.81, Kabupaten Dairi",
+    "operating_hours": "24 Jam",
+    "website": "www.educforest.com"
+  },
+  "Rute Panjat Tebing": {
+    "hotel_name": "Rock Climbing Route Lodge",
+    "hotel_availability": "limited",
+    "contact_phone": "+62-631-8234607",
+    "contact_email": "climbing@routelodge.com",
+    "contact_address": "Jln. Rute Panjat Tebing No.40, Taptapanuli Utara",
+    "operating_hours": "Setiap Hari 06:00-19:00",
+    "website": "www.routelodge.com"
+  },
+  "Perkebunan Kopi": {
+    "hotel_name": "Coffee Plantation Resort",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234608",
+    "contact_email": "booking@coffeeplantation.com",
+    "contact_address": "Jln. Perkebunan Kopi No.56, Kabupaten Simalungun",
+    "operating_hours": "24 Jam",
+    "website": "www.coffeeplantation.com"
+  },
+  "Pusat Selam Danau": {
+    "hotel_name": "Lake Diving Center Hotel",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234609",
+    "contact_email": "dive@lakecenter.com",
+    "contact_address": "Jln. Pusat Selam No.23, Pardesuan",
+    "operating_hours": "24 Jam",
+    "website": "www.lakecenter.com"
+  },
+  "Kamp Kuliner": {
+    "hotel_name": "Culinary Camp Inn",
+    "hotel_availability": "limited",
+    "contact_phone": "+62-631-8234610",
+    "contact_email": "camp@culinaryinn.com",
+    "contact_address": "Jln. Kamp Kuliner No.32, Desa Wisata",
+    "operating_hours": "Setiap Hari 07:00-22:00",
+    "website": "www.culinaryinn.com"
+  },
+  "Lembah Tenang": {
+    "hotel_name": "Peaceful Valley Resort",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234611",
+    "contact_email": "peaceful@valleyresort.com",
+    "contact_address": "Jln. Lembah Tenang No.68, Kabupaten Humbang Hasundutan",
+    "operating_hours": "24 Jam",
+    "website": "www.valleyresort.com"
+  },
+  "Danau Kecil": {
+    "hotel_name": "Small Lake Hotel",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234612",
+    "contact_email": "info@smalllakehotel.com",
+    "contact_address": "Jln. Danau Kecil No.13, Samosir",
+    "operating_hours": "24 Jam",
+    "website": "www.smalllakehotel.com"
+  },
+  "Bukit Panorama 2": {
+    "hotel_name": "Panorama Hill Resort 2",
+    "hotel_availability": "limited",
+    "contact_phone": "+62-631-8234613",
+    "contact_email": "book@panorama2.com",
+    "contact_address": "Jln. Bukit Panorama Dua No.48, Taptapanuli Utara",
+    "operating_hours": "Setiap Hari 07:00-21:00",
+    "website": "www.panorama2.com"
+  },
+  "Wisata Edukasi 2": {
+    "hotel_name": "Educational Tourism 2 Inn",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234614",
+    "contact_email": "stay@edutourism2.com",
+    "contact_address": "Jln. Wisata Edukasi Kedua No.76, Kabupaten Samosir",
+    "operating_hours": "24 Jam",
+    "website": "www.edutourism2.com"
+  },
+  "Taman Bunga": {
+    "hotel_name": "Flower Garden Hotel",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234615",
+    "contact_email": "book@flowergardenhotel.com",
+    "contact_address": "Jln. Taman Bunga No.34, Desa Wisata",
+    "operating_hours": "24 Jam",
+    "website": "www.flowergardenhotel.com"
+  },
+  "Rute Kuliner": {
+    "hotel_name": "Culinary Route Lodge",
+    "hotel_availability": "limited",
+    "contact_phone": "+62-631-8234616",
+    "contact_email": "culinary@routelodge.com",
+    "contact_address": "Jln. Rute Kuliner No.57, Kota Pematang Siantar",
+    "operating_hours": "Setiap Hari 09:00-22:00",
+    "website": "www.routelodge.com"
+  },
+  "Area Pertunjukan": {
+    "hotel_name": "Performance Area Hotel",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234617",
+    "contact_email": "info@performancehotel.com",
+    "contact_address": "Jln. Area Pertunjukan No.17, Samosir",
+    "operating_hours": "24 Jam",
+    "website": "www.performancehotel.com"
+  },
+  "Galeri Foto": {
+    "hotel_name": "Photo Gallery Inn",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234618",
+    "contact_email": "stay@photogalleryinn.com",
+    "contact_address": "Jln. Galeri Foto No.43, Desa Wisata",
+    "operating_hours": "24 Jam",
+    "website": "www.photogalleryinn.com"
+  },
+  "Rute Seni Jalanan": {
+    "hotel_name": "Street Art Route Hotel",
+    "hotel_availability": "limited",
+    "contact_phone": "+62-631-8234619",
+    "contact_email": "art@streetroute.com",
+    "contact_address": "Jln. Seni Jalanan No.29, Desa Wisata",
+    "operating_hours": "Setiap Hari 08:00-21:00",
+    "website": "www.streetroute.com"
+  },
+  "Pusat Aktivitas Anak": {
+    "hotel_name": "Kids Activity Center Hotel",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234620",
+    "contact_email": "kids@activitycenter.com",
+    "contact_address": "Jln. Pusat Aktivitas Anak No.38, Kabupaten Samosir",
+    "operating_hours": "24 Jam",
+    "website": "www.activitycenter.com"
+  },
+  "Panorama Terakhir": {
+    "hotel_name": "Last Panorama Resort",
+    "hotel_availability": "available",
+    "contact_phone": "+62-631-8234621",
+    "contact_email": "lastpanorama@resort.com",
+    "contact_address": "Jln. Panorama Terakhir No.85, Taptapanuli Utara",
+    "operating_hours": "24 Jam",
+    "website": "www.lastpanorama.com"
+  }
+}

@@ -1,49 +1,41 @@
 import json
-import os
+from pathlib import Path
 
-from backend.services.osm_service import fetch_osm_locations, merge_with_static
+# =========================================
+# LOAD DESTINATIONS
+# =========================================
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATA_PATH = os.path.join(BASE_DIR, "data", "locations.json")
+BASE_DIR = Path(__file__).resolve().parent.parent
+DESTINATIONS_FILE = BASE_DIR / "data" / "destinations.json"
+
+with open(DESTINATIONS_FILE, "r", encoding="utf-8") as f:
+    DESTINATIONS = json.load(f)
 
 
-def get_locations(use_osm=True):
+# =========================================
+# GET ALL LOCATIONS
+# =========================================
+
+def get_locations(use_osm=False):
     """
-    Get all locations.
-
-    Returns static locations from JSON file.
-    If use_osm=True and OSM fetch succeeds, merges with real-time OSM POIs.
+    Get all locations/destinations.
+    
+    Args:
+        use_osm: If True, would fetch from OSM (not implemented in this version)
+    
+    Returns:
+        List of destination objects
     """
-    static_locations = []
+    return DESTINATIONS
 
-    if os.path.exists(DATA_PATH):
-        try:
-            with open(DATA_PATH, "r") as f:
-                static_locations = json.load(f)
-        except (json.JSONDecodeError, IOError) as e:
-            print(f"WARNING: Failed to load locations.json: {e}")
 
-    if not use_osm:
-        return static_locations
-
-    # Try to fetch from OSM (with persistent cache fallback)
-    try:
-        osm_locations = fetch_osm_locations()
-        # Always merge even if osm_locations is empty so we get persistent cache data
-        merged = merge_with_static(osm_locations, static_locations)
-        if merged:
-            return merged
-    except Exception as e:
-        print(f"WARNING: OSM fetch failed, using static only: {e}")
-
-    return static_locations
-
+# =========================================
+# GET LOCATION BY NAME
+# =========================================
 
 def get_location_by_name(name):
-    """Find a location by name (case-insensitive)."""
-    locations = get_locations()
-    for loc in locations:
-        if loc.get("name", "").lower() == name.lower():
-            return loc
+    """Get a specific location by name."""
+    for dest in DESTINATIONS:
+        if dest.get("name", "").lower() == name.lower():
+            return dest
     return None
-

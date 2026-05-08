@@ -1,0 +1,75 @@
+/* =========================================
+   APP SHELL
+========================================= */
+
+.app-shell {
+  display: grid;
+  grid-template-columns:
+    var(--sidebar-width)
+    1fr;
+
+  min-height: 100vh;
+
+  background: var(--bg-main);
+
+  transition:
+    grid-template-columns
+    var(--transition-normal);
+}
+
+/* =========================================
+   COLLAPSED SIDEBAR
+========================================= */
+
+.app-shell.sidebar-collapsed {
+  --sidebar-width: 74px;
+}
+
+/* =========================================
+   MAIN PANEL
+========================================= */
+
+.main-panel {
+  position: relative;
+
+  padding:
+    0
+    20px
+    24px
+    20px;
+
+  overflow-x: hidden;
+}
+
+/* =========================================
+   TOP FLOAT BADGE
+========================================= */
+
+.top-right-badge {
+  position: absolute;
+
+  top: 12px;
+  right: 22px;
+
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+
+  background: var(--bg-card);
+
+  border:
+    1px solid
+    var(--line-soft);
+
+  display: grid;
+  place-items: center;
+
+  box-shadow: var(--shadow-sm);
+
+  color: var(--text-muted);
+
+  font-size: 18px;
+
+  z-index: 20;
+}

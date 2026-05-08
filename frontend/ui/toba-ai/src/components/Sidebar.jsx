@@ -4,31 +4,63 @@ import Logo from "./Logo";
 
 export default function Sidebar({ isOpen, onToggle, themeMode, onToggleTheme, gpsActive, location, onToggleGPS }) {
   const [locating, setLocating] = useState(false);
+  const [gpsMessage, setGpsMessage] = useState("");
   const currentPath = useLocation().pathname;
+
+  const applyLocation = (latitude, longitude, message) => {
+    onToggleGPS?.({
+      lat: latitude,
+      lng: longitude,
+    });
+    setLocating(false);
+    setGpsMessage(message);
+  };
 
   const handleEnableGPS = () => {
     if (!navigator.geolocation) {
-      alert("Browser tidak mendukung geolokasi.");
+      setGpsMessage("Browser tidak mendukung geolokasi. Aktifkan fitur lokasi di browser.");
       return;
     }
 
     setLocating(true);
+    setGpsMessage("");
 
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        onToggleGPS?.({
-          lat: position.coords.latitude,
-          lng: position.coords.longitude,
+    if (navigator.permissions?.query) {
+      navigator.permissions
+        .query({ name: "geolocation" })
+        .then((permission) => {
+          if (permission.state === "denied") {
+            setLocating(false);
+            setGpsMessage("Izin lokasi diblokir. Aktifkan Location access di Chrome.");
+            return;
+          }
+
+          navigator.geolocation.getCurrentPosition(
+            (position) => {
+              applyLocation(position.coords.latitude, position.coords.longitude, "");
+            },
+            (error) => {
+              console.error("GPS error:", error);
+              setGpsMessage("Gagal mendapatkan lokasi. Aktifkan izin lokasi di browser.");
+              setLocating(false);
+            },
+            { enableHighAccuracy: true, timeout: 10000 }
+          );
+        })
+        .catch(() => {
+          navigator.geolocation.getCurrentPosition(
+            (position) => {
+              applyLocation(position.coords.latitude, position.coords.longitude, "");
+            },
+            (error) => {
+              console.error("GPS error:", error);
+              setGpsMessage("Gagal mendapatkan lokasi. Aktifkan izin lokasi di browser.");
+              setLocating(false);
+            },
+            { enableHighAccuracy: true, timeout: 10000 }
+          );
         });
-        setLocating(false);
-      },
-      (error) => {
-        console.error("GPS error:", error);
-        alert("Gagal mendapatkan lokasi. Pastikan izin lokasi diaktifkan.");
-        setLocating(false);
-      },
-      { enableHighAccuracy: true, timeout: 10000 }
-    );
+    }
   };
 
   const menuItems = [
@@ -126,6 +158,8 @@ export default function Sidebar({ isOpen, onToggle, themeMode, onToggleTheme, gp
                 </span>
                 <span>▾</span>
               </button>
+
+              {gpsMessage && <div className="gps-status-message">{gpsMessage}</div>}
 
               {gpsActive && location && (
                 <div className="gps-coords">
