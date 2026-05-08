@@ -2,10 +2,29 @@
   "default_user": {
     "history": [
       "rekomendasi wisata danau toba",
-      "rekomendasi wisata danau toba",
-      "rekomendasi wisata danau toba"
+      "kuliner khas batak",
+      "hotel dekat pantai parbaba",
+      "rute dari medan ke samosir",
+      "spot foto bukit terbaik",
+      "wisata keluarga murah",
+      "cuaca bukit holbung hari ini",
+      "penginapan dekat danau",
+      "aktivitas outdoor untuk anak",
+      "tempat healing yang tenang"
     ],
-    "preferences": {},
-    "selected_destinations": []
+    "preferences": {
+      "travel_type": "family",
+      "budget_range": "low-mid",
+      "preferred_activity": "nature",
+      "food_interest": "local_food",
+      "stay_style": "lake_view"
+    },
+    "selected_destinations": [
+      "Bukit Holbung",
+      "Pantai Parbaba",
+      "Desa Tomok",
+      "Bukit Sibea Bea",
+      "Pantai Tongging"
+    ]
   }
 }

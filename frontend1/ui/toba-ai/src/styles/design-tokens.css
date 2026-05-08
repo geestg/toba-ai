@@ -1,0 +1,144 @@
+/* =========================================
+   AI Toba — Design Tokens
+   ========================================= */
+
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+:root {
+  /* Brand */
+  --brand-primary: #1fb7b7;
+  --brand-primary-dark: #0f8f9a;
+  --brand-primary-light: #55d6cc;
+  --brand-gradient: linear-gradient(145deg, #27d6d3, #1598af);
+  --brand-gradient-soft: linear-gradient(145deg, #55d6cc, #38b7bf);
+
+  /* Surfaces — Light */
+  --bg-main: #edf2f7;
+  --bg-sidebar: #f5f7fa;
+  --bg-card: #ffffff;
+  --bg-elevated: #ffffff;
+  --bg-hover: #eef6fb;
+  --bg-subtle: #f0f4f8;
+
+  /* Text — Light */
+  --text-strong: #1e293b;
+  --text-primary: #172b3d;
+  --text-secondary: #4f6174;
+  --text-muted: #64748b;
+  --text-placeholder: #8a9aab;
+  --text-inverse: #ffffff;
+
+  /* Borders */
+  --line-soft: #e2e8f0;
+  --line-medium: #d7e3ec;
+  --line-strong: #c8deea;
+
+  /* Semantic */
+  --success-bg: #e9fff1;
+  --success-text: #237048;
+  --success-border: #b9efce;
+  --warning-bg: #fff4dd;
+  --warning-text: #92671c;
+  --warning-border: #f1d292;
+  --info-bg: #e8fbff;
+  --info-text: #0a7c8b;
+  --info-border: #b8edf5;
+  --danger-bg: #fff0f0;
+  --danger-text: #c9372d;
+  --danger-border: #f5c6cb;
+
+  /* Chat */
+  --bubble-user: #0f6a7c;
+  --bubble-bot-bg: #ffffff;
+  --bubble-bot-border: #e2e8f0;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 6px rgba(15, 49, 73, 0.06);
+  --shadow-md: 0 6px 18px rgba(13, 37, 55, 0.08);
+  --shadow-lg: 0 10px 24px rgba(12, 35, 56, 0.12);
+  --shadow-xl: 0 24px 46px rgba(16, 44, 66, 0.22);
+  --shadow-card-hover: 0 8px 18px rgba(15, 55, 84, 0.09);
+  --shadow-sidebar-card: 0 10px 18px rgba(27, 164, 183, 0.28);
+
+  /* Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-full: 999px;
+
+  /* Spacing Scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+
+  /* Typography */
+  --font-family: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --text-xs: 12px;
+  --text-sm: 13px;
+  --text-base: 14px;
+  --text-md: 15px;
+  --text-lg: 17px;
+  --text-xl: 20px;
+  --text-2xl: 34px;
+  --text-3xl: 42px;
+  --text-4xl: 50px;
+
+  /* Layout */
+  --sidebar-width: 260px;
+  --topbar-height: 64px;
+  --chat-bar-height: 68px;
+
+  /* Z-index */
+  --z-base: 1;
+  --z-sticky: 10;
+  --z-dropdown: 20;
+  --z-modal-overlay: 50;
+  --z-modal: 60;
+  --z-toast: 70;
+}
+
+/* =========================================
+   Dark Mode
+   ========================================= */
+[data-theme="dark"] {
+  --bg-main: #0f172a;
+  --bg-sidebar: #111827;
+  --bg-card: #1e293b;
+  --bg-elevated: #1a2733;
+  --bg-hover: #1e293b;
+  --bg-subtle: #162032;
+
+  --text-strong: #e5edf5;
+  --text-primary: #dce8f4;
+  --text-secondary: #9fb2c4;
+  --text-muted: #8ba1b6;
+  --text-placeholder: #5a6e82;
+  --text-inverse: #0f172a;
+
+  --line-soft: #27384a;
+  --line-medium: #2a3d50;
+  --line-strong: #334155;
+
+  --bubble-bot-bg: #1a2733;
+  --bubble-bot-border: #2a3d50;
+
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 6px 18px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 10px 24px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 24px 46px rgba(0, 0, 0, 0.5);
+  --shadow-card-hover: 0 8px 18px rgba(0, 0, 0, 0.35);
+}
+
+/* Smooth theme transition */
+*,
+*::before,
+*::after {
+  transition: background-color 0.25s ease, border-color 0.25s ease, color 0.2s ease, box-shadow 0.25s ease;
+}
+

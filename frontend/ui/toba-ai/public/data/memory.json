@@ -1,0 +1,30 @@
+{
+  "default_user": {
+    "history": [
+      "mau rekomendasi wisata keluarga",
+      "cari hotel dekat Danau Toba",
+      "aktivitas outdoor yang cocok untuk anak",
+      "kuliner khas batak yang wajib dicoba",
+      "rute tercepat dari medan",
+      "pantai yang cocok untuk sore hari",
+      "penginapan view danau",
+      "cuaca di bukit holbung",
+      "tempat foto yang ramai dikunjungi",
+      "wisata budaya untuk akhir pekan"
+    ],
+    "preferences": {
+      "travel_type": "family",
+      "max_budget": "500K",
+      "interest": "nature",
+      "food": "batak",
+      "stay": "lake_view"
+    },
+    "selected_destinations": [
+      "Pantai Parbaba",
+      "Bukit Holbung",
+      "Desa Tomok",
+      "Bukit Sibea Bea",
+      "Pantai Tongging"
+    ]
+  }
+}

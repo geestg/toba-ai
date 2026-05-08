@@ -1,41 +1,57 @@
 [
-  {
-    "from": "Medan",
-    "to": "Bukit Holbung",
-    "distance_km": 120,
-    "duration_hours": 4,
-    "traffic": "medium"
-  },
-
-  {
-    "from": "Medan",
-    "to": "Pantai Parbaba",
-    "distance_km": 110,
-    "duration_hours": 3.5,
-    "traffic": "low"
-  },
-
-  {
-    "from": "Medan",
-    "to": "Air Terjun Sipiso Piso",
-    "distance_km": 95,
-    "duration_hours": 3,
-    "traffic": "high"
-  },
-
-  {
-    "from": "Medan",
-    "to": "Desa Tomok",
-    "distance_km": 118,
-    "duration_hours": 4,
-    "traffic": "medium"
-  },
-
-  {
-    "from": "Medan",
-    "to": "Bukit Sibea Bea",
-    "distance_km": 125,
-    "duration_hours": 4.5,
-    "traffic": "low"
-  }
+  { "from": "Medan", "to": "Bukit Holbung", "distance_km": 120, "duration_hours": 4, "traffic": "medium" },
+  { "from": "Medan", "to": "Pantai Parbaba", "distance_km": 110, "duration_hours": 3.5, "traffic": "low" },
+  { "from": "Medan", "to": "Air Terjun Sipiso Piso", "distance_km": 95, "duration_hours": 3, "traffic": "high" },
+  { "from": "Medan", "to": "Desa Tomok", "distance_km": 118, "duration_hours": 4, "traffic": "medium" },
+  { "from": "Medan", "to": "Bukit Sibea Bea", "distance_km": 125, "duration_hours": 4.5, "traffic": "low" },
+  { "from": "Medan", "to": "Pantai Tongging", "distance_km": 130, "duration_hours": 4.5, "traffic": "low" },
+  { "from": "Medan", "to": "Tepi Danau Toba", "distance_km": 100, "duration_hours": 3.5, "traffic": "medium" },
+  { "from": "Medan", "to": "Kampung Seni", "distance_km": 105, "duration_hours": 3.5, "traffic": "medium" },
+  { "from": "Medan", "to": "Situs Batu Passe", "distance_km": 112, "duration_hours": 3.8, "traffic": "medium" },
+  { "from": "Medan", "to": "Bukit Pakkodian", "distance_km": 108, "duration_hours": 3.6, "traffic": "low" },
+  { "from": "Medan", "to": "Pantai Sibodiala", "distance_km": 111, "duration_hours": 3.7, "traffic": "medium" },
+  { "from": "Medan", "to": "Sidihoni Lookout", "distance_km": 126, "duration_hours": 4.2, "traffic": "low" },
+  { "from": "Medan", "to": "Simarjarunjung Trail", "distance_km": 133, "duration_hours": 4.6, "traffic": "medium" },
+  { "from": "Medan", "to": "Sipinsur Valley", "distance_km": 127, "duration_hours": 4.1, "traffic": "low" },
+  { "from": "Medan", "to": "Pelabuhan Wisata", "distance_km": 102, "duration_hours": 3.4, "traffic": "medium" },
+  { "from": "Medan", "to": "Wisata Kuliner Pasar Lokal", "distance_km": 104, "duration_hours": 3.3, "traffic": "high" },
+  { "from": "Medan", "to": "Pusat Kerajinan UMKM", "distance_km": 106, "duration_hours": 3.4, "traffic": "medium" },
+  { "from": "Medan", "to": "Hutan Pendidikan", "distance_km": 114, "duration_hours": 3.9, "traffic": "low" },
+  { "from": "Medan", "to": "Air Terjun Mini", "distance_km": 109, "duration_hours": 3.6, "traffic": "low" },
+  { "from": "Medan", "to": "Spot Memancing Lokal", "distance_km": 101, "duration_hours": 3.2, "traffic": "low" },
+  { "from": "Medan", "to": "Kawasan Agrowisata", "distance_km": 140, "duration_hours": 4.8, "traffic": "medium" },
+  { "from": "Medan", "to": "Jalan Setapak Panorama", "distance_km": 116, "duration_hours": 3.8, "traffic": "low" },
+  { "from": "Medan", "to": "Puncak Sunrise", "distance_km": 123, "duration_hours": 4.1, "traffic": "low" },
+  { "from": "Medan", "to": "Area Camping", "distance_km": 118, "duration_hours": 3.9, "traffic": "medium" },
+  { "from": "Medan", "to": "Rute Sepeda", "distance_km": 107, "duration_hours": 3.3, "traffic": "low" },
+  { "from": "Medan", "to": "Wisata Edukasi", "distance_km": 113, "duration_hours": 3.7, "traffic": "medium" },
+  { "from": "Medan", "to": "Pusat Informasi Turis", "distance_km": 98, "duration_hours": 3.1, "traffic": "low" },
+  { "from": "Medan", "to": "Ritual Budaya", "distance_km": 117, "duration_hours": 3.8, "traffic": "medium" },
+  { "from": "Medan", "to": "Jalur Burung", "distance_km": 128, "duration_hours": 4.2, "traffic": "low" },
+  { "from": "Medan", "to": "Gua Lokal", "distance_km": 136, "duration_hours": 4.7, "traffic": "medium" },
+  { "from": "Medan", "to": "Air Panas Alami", "distance_km": 142, "duration_hours": 4.9, "traffic": "medium" },
+  { "from": "Medan", "to": "Panorama Bukit", "distance_km": 119, "duration_hours": 4, "traffic": "low" },
+  { "from": "Medan", "to": "Pasar Malam", "distance_km": 103, "duration_hours": 3.3, "traffic": "high" },
+  { "from": "Medan", "to": "Sentra Oleh-Oleh", "distance_km": 97, "duration_hours": 3.1, "traffic": "medium" },
+  { "from": "Medan", "to": "Kafe Pinggir Danau", "distance_km": 99, "duration_hours": 3.2, "traffic": "low" },
+  { "from": "Medan", "to": "Observatorium Mini", "distance_km": 129, "duration_hours": 4.3, "traffic": "low" },
+  { "from": "Medan", "to": "Kawasan Olahraga", "distance_km": 105, "duration_hours": 3.4, "traffic": "medium" },
+  { "from": "Medan", "to": "Galeria Seni Lokal", "distance_km": 114, "duration_hours": 3.6, "traffic": "low" },
+  { "from": "Medan", "to": "Kebun Buah", "distance_km": 138, "duration_hours": 4.6, "traffic": "medium" },
+  { "from": "Medan", "to": "Rimba Edukasi", "distance_km": 141, "duration_hours": 4.8, "traffic": "low" },
+  { "from": "Medan", "to": "Rute Panjat Tebing", "distance_km": 145, "duration_hours": 5, "traffic": "high" },
+  { "from": "Medan", "to": "Perkebunan Kopi", "distance_km": 139, "duration_hours": 4.7, "traffic": "medium" },
+  { "from": "Medan", "to": "Pusat Selam Danau", "distance_km": 132, "duration_hours": 4.4, "traffic": "low" },
+  { "from": "Medan", "to": "Kamp Kuliner", "distance_km": 101, "duration_hours": 3.2, "traffic": "high" },
+  { "from": "Medan", "to": "Lembah Tenang", "distance_km": 122, "duration_hours": 4, "traffic": "low" },
+  { "from": "Medan", "to": "Danau Kecil", "distance_km": 124, "duration_hours": 4.1, "traffic": "low" },
+  { "from": "Medan", "to": "Bukit Panorama 2", "distance_km": 121, "duration_hours": 4, "traffic": "medium" },
+  { "from": "Medan", "to": "Wisata Edukasi 2", "distance_km": 115, "duration_hours": 3.8, "traffic": "low" },
+  { "from": "Medan", "to": "Taman Bunga", "distance_km": 108, "duration_hours": 3.5, "traffic": "medium" },
+  { "from": "Medan", "to": "Rute Kuliner", "distance_km": 104, "duration_hours": 3.3, "traffic": "high" },
+  { "from": "Medan", "to": "Area Pertunjukan", "distance_km": 112, "duration_hours": 3.6, "traffic": "medium" },
+  { "from": "Medan", "to": "Galeri Foto", "distance_km": 109, "duration_hours": 3.5, "traffic": "low" },
+  { "from": "Medan", "to": "Rute Seni Jalanan", "distance_km": 107, "duration_hours": 3.4, "traffic": "low" },
+  { "from": "Medan", "to": "Pusat Aktivitas Anak", "distance_km": 100, "duration_hours": 3.1, "traffic": "high" },
+  { "from": "Medan", "to": "Panorama Terakhir", "distance_km": 96, "duration_hours": 3, "traffic": "low" }
 ]
